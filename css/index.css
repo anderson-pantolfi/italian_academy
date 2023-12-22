@@ -1,0 +1,371 @@
+:root {
+    --color-font-branco: white;
+    --color-font-preto: black;
+    --cor-fundo-cinza-claro: rgb(233, 230, 230);
+    --cor-fundo-cinza-escuro: rgb(150, 148, 148);
+    --font-family: Helvetica, arial, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+/* APRESNETAÇÃO ESCOLA */
+#apresentacao_escola {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #053c74;
+    margin: -10px 0px 25px 0px;
+    padding-left: 30PX;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.imagem_rua_italia {
+    margin-top: 150px;
+    margin-left: 15px;
+    margin-right: 10px;
+    padding: 0px;
+}
+
+.texto_apresentacao {
+    margin: 40px 10px 20px 40px;
+    width: 50%;
+    font-family:  var(--font-family);
+    color: var(--color-font-branco);
+    line-height: 28px;
+}
+
+
+.titulo_aprensenta {
+    text-transform: uppercase;
+    font-size: 1.15em;
+}
+
+.texto {
+    font-size: 1em;
+}
+
+.frase_final {
+    text-align: center; 
+    font-size: 1.1em; 
+    font-family: var(--font-family);
+}
+
+/* diferencial */
+#diferencial {
+    background-color: var(--cor-fundo-cinza-claro);
+    margin-top: -25px;
+    font-family:  var(--font-family);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.flex_conteiner_diferencial {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+.titulo_diferencial {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2.2em;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+
+.div_diferencial {
+    background-color: var(--color-font-branco);
+    width: 450px;
+    padding: 25px;
+    margin: 20px 20px 15px 20px;
+    box-shadow: 3px 5px rgb(138, 137, 137);
+    line-height: 30px;
+}
+
+
+.titulo_subdiferencial{
+    font-size: 1.55em;
+}
+
+.texto_subdiferencial {
+    font-size: 1.25em;
+}
+
+
+/*formulario aula teste */
+#aula_teste {
+    background-color: #074e44;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-family: var(--font-family);
+    text-shadow: 5px 5px 5px var(--color-font-preto);
+    color: var(--color-font-branco);
+}
+
+#aula_teste h2, #aula_teste h4 {
+    line-height: 40px;
+    text-align: center;
+}
+
+.flex_conteiner__aula_teste{
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+}
+
+.flex_conteiner__aula_teste img {
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.flex_conteiner__aula_teste form {
+    margin-top: 15px
+}
+
+label {
+    display: block;
+    margin: 15px 10px 20px 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+input{
+    width: 800px;
+}
+
+.dados_do_usuario {
+    padding: 5px;
+    font-weight: 300;
+    font-family: var(--font-family);
+    font-size: 30px;
+    text-align: center;
+    color: var(--color-font-preto);
+}
+
+.botao_enviar {
+    margin-left: 350px; 
+    padding: 12px;   
+    width: 150px;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
+.botao_enviar:hover {
+    background-color: rgb(139, 7, 7);
+    color: var(--color-font-branco);
+}
+
+form > h5 {
+    text-align: center;
+}
+
+.link_termo {
+    color: var(--color-font-branco);
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.link_termo:hover {
+    color: red;
+    flex-flow: row column;
+}
+
+
+/* depoimentos */
+
+#depoimentos_aluno {
+    background-color: rgb(233, 230, 230);
+    text-align: center;
+    padding: 50px;
+}
+
+.depoimento_titulo {
+    font-size: 2.3em;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+
+.flex_conteiner__depoimentos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.depoimento {
+    margin: 30px 25px 40px 20px;
+    padding: 30px 20px 40px;
+    width: 450px;
+    background-color: white;
+    box-shadow: 3px 5px rgb(138, 137, 137);
+    line-height: 25px;
+    font-size: 1.2em;
+    font-family: var(--font-family);
+}
+
+.nome_depoimento_aluno {
+    font-weight: bold;
+}
+
+.conclusao_depoimentos {
+    font-family: var(--font-family);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/* perguntas frequentes */
+
+#perguntas_frequentes {
+    padding-top: 50px;
+}
+
+#perguntas_frequentes h3 {
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 1.8em;
+}
+
+.pergunta {
+    margin: auto;
+}
+
+details {
+    background-color: var(--cor-fundo-cinza-claro);
+    margin: 30px 20px 30px 50px;
+}
+
+summary {
+    display: block;
+    background-color: var(--cor-fundo-cinza-claro);
+    padding: 30px;
+    padding-left: 80px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: var(--font-family);
+    font-size: 1.15em;
+}
+
+details p, details ul  {
+    background-color: white;
+    text-transform: capitalize;
+    font-family: var(--font-family);
+    font-size: 1.05em;
+}
+
+details p {
+    padding: 40px;
+}
+
+details ul {
+    padding-left: 80px;
+    padding-bottom: 40px;
+}
+
+
+a.botao_matricula {
+    text-decoration: none;
+}
+
+.botao_matricula button {
+    display: block;
+    margin: 20px auto 40px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: var(--font-family);
+    font-size: 1.15em;
+}
+
+.botao_matricula button:hover {
+    background-color: rgb(139, 7, 7);
+    color: var(--color-font-branco);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+
+    #imagem_principal img {
+        width: 100%;
+    }
+    
+    #apresentacao_escola {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    .imagem_rua_italia {
+        padding-top: 0px;
+        margin: auto;
+        padding: 0px;
+    }
+
+    .imagem_rua_italia  img {
+        margin-top: 20px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .texto_apresentacao {
+        margin: 15px auto 20px auto;
+        width: 90%;
+    }
+
+    /*formulario aula teste */
+    #aula_teste {
+        padding-top: 15px;
+        padding-bottom: 25px;
+        text-shadow: 3px 3px 3px var(--color-font-preto);
+    }
+
+    .flex_conteiner__aula_teste{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex_conteiner__aula_teste img {
+        margin-top: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 80%;
+    }
+
+    form {
+        margin-top: 15px;
+        margin-right: 30%;
+        margin-left: 10%;
+        width: 70%;
+    }
+
+    label {
+        width: 80%;
+        font-size: 1.1em;
+    }
+
+    input {
+        width: 150%;
+    }
+
+    .dados_do_usuario {
+        padding: 5px;
+        margin: auto;
+        font-size: 1.2em;
+    }
+
+    form > h5 {
+        margin-left: 30%;
+    }
+
+    .botao_enviar {
+        margin-left: 35%;    
+    }
+}

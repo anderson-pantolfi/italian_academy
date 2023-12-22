@@ -1,0 +1,279 @@
+:root {
+    --cor_fondo_vermelho_escuro: #332626;
+    --cor_fundo_vemelho_medio:  #822C2C;
+    --cor_fundo_vermelho_claro: #b61919;
+    --cor_font_hover_vemelho_branco: #cf8b8b;
+    --font-family: Helvetica, arial, sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#corpo {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    background-color: white;
+    padding-top: 0;
+    margin-top: 0px; 
+}
+
+header, footer {
+    padding: 0;
+    width: 100%;
+    max-width: 1400px;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+
+header .divisao_segundaria {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--cor_fondo_vermelho_escuro);
+}
+
+header .divisao_segundaria .outros_links {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+header .divisao_segundaria .outros_links a{
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--font-family);
+    font-size: 1.05em;
+    font-weight: 400;
+}
+
+header .divisao_segundaria .matricula-login {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    padding: 15px;
+}
+
+header .divisao_segundaria .matricula-login a {
+    text-decoration: none;
+}
+
+header .divisao_segundaria .matricula-login button {
+    display: inline-block;
+    background-color: #fa8c06;
+    padding: 15px 20px;
+    border-radius: 15px;
+    text-transform: uppercase;;
+    font-weight: bolder;
+    font-size: 1.1em;
+    font-family: var(--font-family);
+    color: white;
+}
+
+header .divisao_segundaria .matricula-login button.matricula {
+    margin-right: 50px;
+}
+
+header .divisao_segundaria .matricula-login button:hover {
+    background-color: #df7900;
+}
+
+header .divisao_segundaria .outros_links a:hover{
+    color: var(--cor_fundo_vermelho_claro);
+}
+
+header .divisao_principal {
+    display: flex;
+    align-items: end;
+    height: 122px;
+}
+
+/*logo*/
+#logo_cabesalho {
+    background-color: var(--cor_fundo_vemelho_medio);
+    margin-top: 2%;
+    padding: 1% 2%;
+    font-family: 'cocogoose-condensed-trial-light', sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    color: white;
+}
+
+/* MENU */
+#menu_principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: 	var(--cor_fundo_vermelho_claro);
+    width: 100%;
+    height: 100%;
+}
+
+#menu_principal ul {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 0;
+}
+
+#menu_principal li {
+    display: inline-block;
+    margin: 0px;
+}
+
+#menu_principal a {
+    display: block;
+    text-decoration: none;
+    margin: 0px;
+    padding: 15px;
+    height: 80%;
+    line-height: 30px;
+    font-family: lighter,sans-serif;
+    font-weight: bolder;
+    font-size: 1.1em;
+    color: white;
+}
+
+#menu_principal a:hover {
+    color: var(--cor_font_hover_vemelho_branco);
+}
+
+#imagem_principal img {
+    position: relative;
+    top: -5px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/* footer */
+
+.mapa_site {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: 	var(--cor_fundo_vermelho_claro);
+    width: 100%;
+    flex-direction: row;
+    padding: 60px 0px 40px 90px;
+}
+
+.mapa_site div{
+    margin-right: 150px;
+}
+
+.mapa_site a {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: bolder;
+    color: white;
+}
+
+.mapa_site a:hover{
+    color: var(--cor_font_hover_vemelho_branco);
+}
+
+.redes_sociais {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 5px solid white;
+    padding-bottom: 30px;
+    padding-right: 80px;
+    background-color: var(--cor_fundo_vermelho_claro);
+}
+
+.redes_sociais .text_social {
+    margin-right: 40px;
+    font-size: 1.4em;
+    font-family: var(--font-family);
+    color: white;
+}
+
+.redes_sociais .icons_social a {
+    margin-right: 15px;
+    color: white;
+    font-size: 2em;
+}
+
+.redes_sociais .icons_social a:hover {
+    color: var(--cor_font_hover_vemelho_branco);
+}
+
+.copyright {
+    background-color: var(--cor_fondo_vermelho_escuro);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.05em;
+    font-family: var(--font-family);
+    font-weight: 200;
+    color: white;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    /* header */
+    header .divisao_segundaria {
+        display: none;
+    }
+
+    #logo_cabesalho {
+        font-size: 1em;
+    }
+
+
+    /* footer */
+    .mapa_site {
+        flex-direction: column; 
+        padding-left: 0px;    
+    }
+
+    .mapa_site div{
+        margin: 0px auto 25px auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .mapa_site a {
+        font-size: 1em;
+    }
+}

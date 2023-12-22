@@ -1,0 +1,56 @@
+:root {
+    --cor-fundo-cinza: #e6e6e6;
+    --font-family: Helvetica, arial, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+    background-image: url('../imagem/fundo_login.jpg');
+}
+
+#div-login {
+    background-color: var(--cor-fundo-cinza);
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 40%;
+    height: 500px;
+    padding: 50px 20px 20px;
+}
+
+#div-login h1 {
+    text-align: center;
+}
+
+#div-login form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    height: 300px;
+}
+
+#div-login label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: var(--font-family);
+}
+
+#div-login #usuario{
+    margin-bottom: 50px;
+}
+
+#div-login input {
+    width: 100%;
+    font-size: 2em;
+}
+
+
+footer .redes_sociais{
+    padding-top: 30px;
+}
