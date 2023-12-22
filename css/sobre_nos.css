@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+:root {
+    --cor_fondo_vermelho_escuro: #332626;
+    --cor_fundo_vemelho_medio:  #822C2C;
+    --cor_fundo_vermelho_claro: #b61919;
+    --cor_font_hover_vemelho_branco: #cf8b8b;
+    --font-family: Helvetica, arial, sans-serif;
+}
+
+
+.titulos_principais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+
+.titulos_pincipais_text {
+    margin: 60px auto;
+    width: 80%;
+}
+
+.titulos_pincipais_text h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.titulos_pincipais_text h2 {
+    margin-left: 40px;
+    text-align-last: center;
+}

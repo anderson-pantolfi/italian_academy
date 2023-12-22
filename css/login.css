@@ -1,5 +1,9 @@
+@charset "utf-8";
+
 :root {
     --cor-fundo-cinza: #e6e6e6;
+    --cor_fundo_vemelho_medio:  #822C2C;
+    --cor_fundo_vemelho_escuro:  #5c1d1d;
     --font-family: Helvetica, arial, sans-serif;
 }
 
@@ -16,7 +20,7 @@ main {
     border-radius: 20px;
     width: 40%;
     height: 500px;
-    padding: 50px 20px 20px;
+    padding: 30px 20px 10px;
 }
 
 #div-login h1 {
@@ -29,7 +33,7 @@ main {
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding: 20px;
+    padding: 90px 20px 10px;
     width: 80%;
     height: 300px;
 }
@@ -48,6 +52,36 @@ main {
 #div-login input {
     width: 100%;
     font-size: 2em;
+}
+
+#div-login .button_entrar {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-family: var(--font-family);
+    font-weight: bolder;
+}
+
+#div-login button:hover {
+    background-color: var(--cor_fundo_vemelho_medio);
+    color: white;
+    border-color: var(--cor_fundo_vemelho_escuro);
+}
+
+#div-login form a, #div-login form a:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.05em;
+    font-family: var(--font-family);
+    font-weight: bold;
+    color: black;
+}
+
+#div-login form a:hover,  #div-login form a:active {
+    color: red;
 }
 
 
