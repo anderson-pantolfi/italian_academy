@@ -28,11 +28,13 @@
     margin-bottom: 30px;
     text-align: center;
     font-family: var(--font-family);
+    font-size: 2.2em;
 }
 
 .titulos_pincipais_text h2 {
     margin-left: 40px;
     text-align-last: center;
+    font-size: 1.5em;
 }
 
 .titulos_principais img {
@@ -62,7 +64,7 @@
 .banner .texto h2{
     text-align: center;
     font-family: var(--font-family);
-    font-size: 30px;
+    font-size: 2em;
     color: white;
 }
 
@@ -83,16 +85,37 @@
 }
 
 #sobre_nos {
+    width: 85%;
+    margin: auto;
     margin-bottom: 40px;
 }
 
-#sobre_nos h3 {
+#sobre_nos h3 {  
+    margin-bottom: 25px;
     text-align: center;
     text-transform: uppercase;
     font-family: var(--font-family);
-    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+
+#sobre_nos p {
+    margin-bottom: 20px;
+    line-height: 25px;
+    text-indent: 40px;
+    font-family: var(--font-family);
+    font-size: 1.2em;
+}
+
+#sobre_nos p::first-letter {
+    text-transform: uppercase;
 }
 
 #sobre_nos div {
     margin-bottom: 30px;
+}
+
+#sobre_nos .historia_italian_academy img {
+    display: block;
+    border: 2px solid black;
+    margin: 30px auto 70px;
 }
