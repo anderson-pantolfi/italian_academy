@@ -1,10 +1,6 @@
 @charset "utf-8";
 
 :root {
-    --cor_fondo_vermelho_escuro: #332626;
-    --cor_fundo_vemelho_medio:  #822C2C;
-    --cor_fundo_vermelho_claro: #b61919;
-    --cor_font_hover_vemelho_branco: #cf8b8b;
     --font-family: Helvetica, arial, sans-serif;
 }
 
@@ -85,8 +81,6 @@
 }
 
 #sobre_nos {
-    width: 85%;
-    margin: auto;
     margin-bottom: 40px;
 }
 
@@ -102,6 +96,7 @@
     margin-bottom: 20px;
     line-height: 25px;
     text-indent: 40px;
+    text-align: justify;
     font-family: var(--font-family);
     font-size: 1.2em;
 }
@@ -110,12 +105,87 @@
     text-transform: uppercase;
 }
 
-#sobre_nos div {
-    margin-bottom: 30px;
-}
-
 #sobre_nos .historia_italian_academy img {
     display: block;
     border: 2px solid black;
     margin: 30px auto 70px;
+}
+
+#sobre_nos div {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+#sobre_nos div h4 {
+    margin-bottom: 30px;
+    margin-left: 5%;
+    font-family: var(--font-family);
+    font-size: 1.4em;
+}
+
+#sobre_nos div.Crescendo {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: #e9f5fa;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#sobre_nos .Crescendo .Crescendo_text {
+    width: 55%;
+    margin: auto;
+}
+
+#sobre_nos .Crescendo .Crescendo_text h4 {
+    text-align: center;
+}
+
+#sobre_nos .Crescendo img {
+    margin-left: 50px;
+    width: 30%;
+}
+
+#sobre_nos .Bem-Vindo {
+    text-align: center;
+}
+
+#missao, #valores, #metas {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#missao h3, #valores h3, #metas h3 {  
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-size: 1.3em;
+}
+
+#missao p, #valores p, #metas p {
+    margin-bottom: 20px;
+    line-height: 25px;
+    text-indent: 40px;
+    text-align: justify;
+    font-family: var(--font-family);
+    font-size: 1.2em;
+}
+
+#missao p::first-letter, #valores p::first-letter, #metas p::first-letter {
+    text-transform: uppercase;
+}
+
+#missao div, #valores div, #metas div {
+    margin-bottom: 30px;
+}
+
+#valores div h4, #metas div h4 {
+    margin-bottom: 30px;
+    margin-left: 5%;
+    font-family: var(--font-family);
+    font-size: 1.15em;
 }
