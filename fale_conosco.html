@@ -4,6 +4,12 @@
         <title>FALA CONOSCO</title>
 
         <link rel="stylesheet" type="text/css" href="css/estilo_principal.css">
+        <link rel="stylesheet" type="text/css" href="css/fale_conosco.css">
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, inicial-scale=1.0" />
+
+        <script src="https://kit.fontawesome.com/c978c073eb.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id=corpo>
@@ -43,14 +49,26 @@
     
             </header>
             <main>
-                <picture id="imagem_principal">
-                    <source media="(max-width:480px)" srcset="imagem/coliseu-de-roma320.jpg">
-                    <source media="(max-width:576px)"  srcset="imagem/coliseu-de-roma576.jpg">
-                    <source media="(max-width:760px)" srcset="imagem/coliseu-de-roma760.jpg">
-                    <source media="(max-width:960px)" srcset="imagem/coliseu-de-roma960.jpg">
-                    <source media="(max-width:1200px)" srcset="imagem/coliseu-de-roma1200.jpg">
-                    <img src="imagem/coliseu-de-roma.jpeg" alt="esta é uma imagem do colizeu de roma, italia vista de frente, foto tirada durante o dia ">
-                </picture>
+                <div  id="div-formulario">
+
+                    <form method="post">
+                        <label for="nome">Nome_Completo:<span class="input_required">*</span>
+                            <input type="text" required autofocus maxlength="30" minlength="3" id="nome" />
+                        </label>
+
+                        <label for="telefone">Digite seu Telefone:
+                            <input type="tel" id="telefone" placeholder="(xx) xxxx-xxxx" />
+                        </label>
+
+                        <label for="celular">Digite seu Celular<span class="input_required">*</span>
+                            <input type="tel" id="celular" placeholder="(xx) 9xxxx-xxxx" pattern="^\([1-9]{2}\) 9[1-9][0-9]{3}-[0-9]{4}$" />
+                        </label>
+
+                        <label>E-mail<span class="input_required">*</span>
+                            <input type="email" id="email" />
+                        </label>
+                    </form>
+                </div>
             </main>
 
             <footer>

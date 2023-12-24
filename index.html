@@ -155,25 +155,25 @@
                         <img src="imagem/estudando_p.jpg" alt="garoto estudando com hedphone preto, varios caderno na mesa">
                     
                         <form method="post">
-                            <label>Nome Completo:<span style="color: red;">*</span><br />
-                                <input type="texto" class="dados_do_usuario" name="name" required minlength="3" maxlength="60">
+                            <label for="nome">Nome Completo:<span style="color: red;">*</span><br />
+                                <input type="texto" class="dados_do_usuario" name="name" required minlength="3" maxlength="60" id="nome">
                             </label>
 
-                            <label>Data de Nacimento<span style="color: red;">*</span><br/>
-                                <input type="date" class="dados_do_usuario">
+                            <label for="data_nacimento">Data de Nacimento<span style="color: red;">*</span><br/>
+                                <input type="date" class="dados_do_usuario" id="data_nacimento" required>
                             </label>
 
 
-                            <label>Telefone:<br>
-                                <input type="tel" class="dados_do_usuario" name="phone" minlength="20" maxlength="15" placeholder="(xx) xxxx-xxxx" pattern="^\([1-9]{2}\) [0-9]{4}-[0-9]{4}$" title="(xx) xxxx-xxxx">
+                            <label for="telefone">Telefone:<br>
+                                <input type="tel" class="dados_do_usuario" name="phone" minlength="20" maxlength="15" placeholder="(xx) xxxx-xxxx" pattern="^\([1-9]{2}\) [1-9][0-9]{3}-[0-9]{4}$" title="(xx) xxxx-xxxx" id="telefone">
                             </label>
 
-                            <label>Celular:<span style="color: red;">*</span><br />
-                                <input type="tel" class="dados_do_usuario" name="phone" required minlength="15" maxlength="20" placeholder="(xx) 9xxxx-xxxx" pattern="^\([1-9]{2}\) 9[0-9]{4}-[0-9]{4}$" title="(xx) 9xxxx-xxxx">
+                            <label for="celular">Celular:<span style="color: red;">*</span><br />
+                                <input type="tel" class="dados_do_usuario" name="phone" required minlength="15" maxlength="20" placeholder="(xx) 9xxxx-xxxx" pattern="^\([1-9]{2}\) 9[1-9][0-9]{3}-[0-9]{4}$" title="(xx) 9xxxx-xxxx" id="celular">
                             </label>
                             
-                            <label>E-MAIL:<span style="color: red;">*</span><br />
-                                <input type="email" class="dados_do_usuario" placeholder="email_valido@gmail.com" pattern="[a-zA-Z0-9]+([._%+-]+[a-zA-Z0-9]+)*@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$">
+                            <label for="email">E-MAIL:<span style="color: red;">*</span><br />
+                                <input type="email" class="dados_do_usuario" placeholder="email_valido@gmail.com" pattern="[a-zA-Z0-9]+([._%+-]+[a-zA-Z0-9]+)*@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$" required id="email">
                             </label>
 
                             <input type="submit" value="ENVIAR" class="botao_enviar">
