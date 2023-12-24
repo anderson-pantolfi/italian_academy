@@ -52,21 +52,41 @@
                 <div  id="div-formulario">
 
                     <form method="post">
-                        <label for="nome">Nome_Completo:<span class="input_required">*</span>
-                            <input type="text" required autofocus maxlength="30" minlength="3" id="nome" />
-                        </label>
+                        <fieldset>
+                            <legend>dados do usuario: </legend>
 
-                        <label for="telefone">Digite seu Telefone:
-                            <input type="tel" id="telefone" placeholder="(xx) xxxx-xxxx" />
-                        </label>
+                            <label for="nome">Nome_Completo:<span class="input_required">*</span>
+                                <input type="text" required autofocus maxlength="30" minlength="3" id="nome" /><br />
+                            </label>
+                            <label for="telefone">Digite seu Telefone:
+                                <input type="tel" id="telefone" placeholder="(xx) xxxx-xxxx" /><br />
+                            </label>
+                            <label for="celular">Digite seu Celular<span class="input_required">*</span>
+                                <input type="tel" id="celular" placeholder="(xx) 9xxxx-xxxx" pattern="^\([1-9]{2}\) 9[1-9][0-9]{3}-[0-9]{4}$" /><br />
+                            </label>
+                            <label>E-mail<span class="input_required">*</span>
+                                <input type="email" id="email" /><br />
+                            </label>
+                            <label for="aluno">Sou Aluno
+                                <input type="radio" name="verifica_aluno"value="aluno"/>
+                            </label>
+                            <label for="visitante">Não sou alunos
+                                <input type="radio" name="verifica_aluno" value="nao_aluno"/>
+                            </label>
+                        </fieldset>
 
-                        <label for="celular">Digite seu Celular<span class="input_required">*</span>
-                            <input type="tel" id="celular" placeholder="(xx) 9xxxx-xxxx" pattern="^\([1-9]{2}\) 9[1-9][0-9]{3}-[0-9]{4}$" />
-                        </label>
+                        <fieldset>
+                            <legend>Dados da Mensagem:</legend>
 
-                        <label>E-mail<span class="input_required">*</span>
-                            <input type="email" id="email" />
-                        </label>
+                            <label for="motivo_contato">motivo do contato:<span class="input_required">*</span>
+                                <select id="motivo_contato" required>
+                                    <option disabled selected></option>
+                                    <option value="duvidas">duvidas</option>
+                                    <option value="reclamação">reclamacao</option>
+                                    <option value="sugestão">sugestao</option>
+                                </select>
+                            </label>
+                        </fieldset>
                     </form>
                 </div>
             </main>
