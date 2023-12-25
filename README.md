@@ -14,6 +14,7 @@ O objetivo deste projeto foi aplicar e aprimorar habilidades em programação, b
 As imagens utilizadas neste projeto foram obtidas de bancos de dados como Freepik e Pixabay, utilizando recursos licenciados gratuitos disponíveis para uso não comercial.
 
 ## Termos de Uso
+---
 
 **Atenção:** Este repositório está disponibilizado apenas para referência e não pode ser modificado ou utilizado para qualquer fim, seja comercial ou não, sem permissão expressa do autor.
 
