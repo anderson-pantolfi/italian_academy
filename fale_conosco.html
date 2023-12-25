@@ -55,36 +55,50 @@
                         <fieldset>
                             <legend>dados do usuario: </legend>
 
-                            <label for="nome">Nome_Completo:<span class="input_required">*</span>
+                            <label for="nome">Nome_Completo:<span class="input_required">*</span><br />
                                 <input type="text" required autofocus maxlength="30" minlength="3" id="nome" /><br />
                             </label>
-                            <label for="telefone">Digite seu Telefone:
+                            <label for="telefone">Digite seu Telefone:<br />
                                 <input type="tel" id="telefone" placeholder="(xx) xxxx-xxxx" /><br />
                             </label>
-                            <label for="celular">Digite seu Celular<span class="input_required">*</span>
+                            <label for="celular">Digite seu Celular<span class="input_required">*</span><br />
                                 <input type="tel" id="celular" placeholder="(xx) 9xxxx-xxxx" pattern="^\([1-9]{2}\) 9[1-9][0-9]{3}-[0-9]{4}$" /><br />
                             </label>
-                            <label>E-mail<span class="input_required">*</span>
+                            <label>E-mail<span class="input_required">*</span><br />
                                 <input type="email" id="email" /><br />
                             </label>
-                            <label for="aluno">Sou Aluno
-                                <input type="radio" name="verifica_aluno"value="aluno"/>
-                            </label>
-                            <label for="visitante">Não sou alunos
-                                <input type="radio" name="verifica_aluno" value="nao_aluno"/>
-                            </label>
+
+                            <div class="aluno">
+                                <label for="aluno" class="verifica_aluno">Sou Aluno
+                                    <input type="radio" value="aluno" name="checkMatricula" id="aluno"/>
+                                </label>
+                                <label for="visitante" class="verifica_aluno">Não sou alunos
+                                    <input type="radio" value="nao_aluno" name="checkMatricula" id="visitante"/>
+                                </label>
+                            </div>
+
                         </fieldset>
 
                         <fieldset>
                             <legend>Dados da Mensagem:</legend>
 
-                            <label for="motivo_contato">motivo do contato:<span class="input_required">*</span>
+                            <label for="motivo_contato">motivo do contato:<span class="input_required">*</span><br />
                                 <select id="motivo_contato" required>
                                     <option disabled selected></option>
                                     <option value="duvidas">duvidas</option>
-                                    <option value="reclamação">reclamacao</option>
-                                    <option value="sugestão">sugestao</option>
+                                    <option value="reclamação">reclamação</option>
+                                    <option value="sugestão">sugestão</option>
                                 </select>
+                            </label>
+
+                            <label for="subcategoriamotivo">sub categoria motivo do contato:<span class="input_required">*</span><br />
+                                    <select  id="subcategoriamotivo" required>
+                                        <option disabled selected></option>
+                                    </select>
+                            </label>
+
+                            <label for="mensagem">Escreva sua mensagem:<span class="input_required">*</span><br>
+                                <textarea id="mensagem" required></textarea>
                             </label>
                         </fieldset>
                     </form>
