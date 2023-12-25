@@ -9,7 +9,7 @@ O objetivo deste projeto foi aplicar e aprimorar habilidades em programação, b
 
 ### Tecnologias Utilizadas:
 
-Linguagens de Programação: HTML, CSS
+*Linguagens de Programação:* HTML, CSS
 
 As imagens utilizadas neste projeto foram obtidas de bancos de dados como Freepik e Pixabay, utilizando recursos licenciados gratuitos disponíveis para uso não comercial.
 
