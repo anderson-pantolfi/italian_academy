@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="css/fale_conosco.css">
 
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, inicial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <script src="https://kit.fontawesome.com/c978c073eb.js" crossorigin="anonymous"></script>
     </head>
@@ -49,59 +49,80 @@
     
             </header>
             <main>
-                <div  id="div-formulario">
 
-                    <form method="post">
-                        <fieldset>
-                            <legend>dados do usuario: </legend>
+                <h3 class="faleconosco">Fale com a Italian Academy</h3>
 
-                            <label for="nome">Nome_Completo:<span class="input_required">*</span><br />
-                                <input type="text" required autofocus maxlength="30" minlength="3" id="nome" /><br />
-                            </label>
-                            <label for="telefone">Digite seu Telefone:<br />
-                                <input type="tel" id="telefone" placeholder="(xx) xxxx-xxxx" /><br />
-                            </label>
-                            <label for="celular">Digite seu Celular<span class="input_required">*</span><br />
-                                <input type="tel" id="celular" placeholder="(xx) 9xxxx-xxxx" pattern="^\([1-9]{2}\) 9[1-9][0-9]{3}-[0-9]{4}$" /><br />
-                            </label>
-                            <label>E-mail<span class="input_required">*</span><br />
-                                <input type="email" id="email" /><br />
-                            </label>
+                <div id="faleConosco">
 
-                            <div class="aluno">
-                                <label for="aluno" class="verifica_aluno">Sou Aluno
-                                    <input type="radio" value="aluno" name="checkMatricula" id="aluno"/>
+                    <div id="outrasFormasContato">
+                        <h4>Caso preferir pode entrar em contato:</h4>
+                        <p class="telefone">(19) 2434-4373</p>
+                        <p class="telefone">(19) 93553-4862</p>
+
+                        <a href="mailto:atendimento_cliente@italian.academy.com.br">atendimento_cliente@italian.academy.com.br</a>
+
+
+                    </div>
+
+                    <div  id="div-formulario">
+                        <form method="post">
+                            <fieldset>
+                                <legend>dados do usuario: </legend>
+                                <label for="nome">Nome_Completo:<span class="input_required">*</span><br />
+                                    <input type="text" required autofocus maxlength="30" minlength="3" id="nome" /><br />
                                 </label>
-                                <label for="visitante" class="verifica_aluno">Não sou alunos
-                                    <input type="radio" value="nao_aluno" name="checkMatricula" id="visitante"/>
+                                <label for="telefone">Digite seu Telefone:<br />
+                                    <input type="tel" id="telefone" placeholder="(xx) xxxx-xxxx" /><br />
                                 </label>
-                            </div>
-
-                        </fieldset>
-
-                        <fieldset>
-                            <legend>Dados da Mensagem:</legend>
-
-                            <label for="motivo_contato">motivo do contato:<span class="input_required">*</span><br />
-                                <select id="motivo_contato" required>
-                                    <option disabled selected></option>
-                                    <option value="duvidas">duvidas</option>
-                                    <option value="reclamação">reclamação</option>
-                                    <option value="sugestão">sugestão</option>
-                                </select>
-                            </label>
-
-                            <label for="subcategoriamotivo">sub categoria motivo do contato:<span class="input_required">*</span><br />
-                                    <select  id="subcategoriamotivo" required>
+                                <label for="celular">Digite seu Celular<span class="input_required">*</span><br />
+                                    <input type="tel" id="celular" placeholder="(xx) 9xxxx-xxxx" pattern="^\([1-9]{2}\) 9[1-9][0-9]{3}-[0-9]{4}$" /><br />
+                                </label>
+                                <label>E-mail<span class="input_required">*</span><br />
+                                    <input type="email" id="email" /><br />
+                                </label>
+                                <div class="aluno">
+                                    <label for="aluno" class="verifica_aluno">Sou Aluno
+                                        <input type="radio" value="aluno" name="checkMatricula" id="aluno"/>
+                                    </label>
+                                    <label for="visitante" class="verifica_aluno">Não sou alunos
+                                        <input type="radio" value="nao_aluno" name="checkMatricula" id="visitante"/>
+                                    </label>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Dados da Mensagem:</legend>
+                                <label for="motivo_contato">motivo do contato:<span class="input_required">*</span><br />
+                                    <select id="motivo_contato" required>
                                         <option disabled selected></option>
+                                        <option value="duvidas">duvidas</option>
+                                        <option value="reclamacao">reclamação</option>
+                                        <option value="sugestao">sugestão</option>
+                                        <option value="outros">outros</option>
                                     </select>
-                            </label>
+                                </label>
+                                <div id="submotivo">
+                                    <label for="subcategoriamotivo">sub categoria motivo do contato:<span class="input_required">*</span><br />
+                                            <select  id="subcategoriamotivo" required>
+                                                <option disabled selected></option>
+                                            </select>
+                                    </label>
+                                </div>
+                                <div id="divrespostaPersonalizada">
+                                    <label for="respostaPersonalizada"><div id='textoDivPersonalizada' style="display: inline;"></div><span class="input_required">*</span><br>
+                                        <input typr="text" placeholder="" id="respostaPersonalizada">
+                                    </label>
+                                </div>
+                                <label for="mensagem">Escreva sua mensagem:<span class="input_required">*</span><br>
+                                    <textarea id="mensagem" required></textarea>
+                                </label>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
 
-                            <label for="mensagem">Escreva sua mensagem:<span class="input_required">*</span><br>
-                                <textarea id="mensagem" required></textarea>
-                            </label>
-                        </fieldset>
-                    </form>
+                <div id="mapa">
+                    <div id="area_mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.8378399890034!2d-47.40357742552724!3d-22.585167526454363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c88103574e7bb5%3A0xfb6c7586421479b5!2sR.%20Marcos%20Baccan%20-%20Vila%20Claudia%2C%20Limeira%20-%20SP%2C%2013480-412!5e0!3m2!1spt-BR!2sbr!4v1704144003427!5m2!1spt-BR!2sbr" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
                 </div>
             </main>
 
@@ -145,9 +166,16 @@
                 </div>
 
                 <div class="copyright">
-                    Copyright 2023 &copy; italian academy by anderson Todos os direitos reservados
+                    Copyright 2023 &copy; italian academy by anderson Todos os direitos reservados <br>
+                    <p><i> ITALIAN ACADEMY Digital Services S.A&copy;<br>
+                        CNPJ: 78.247.776/0001-06</i></p>
+                    <address>
+                        Rua Marcos Baccan, 740 - 7º andar <br>
+                        Limeira, SP - 13480-412
+                    </address>
                 </div>
             </footer>
         </div>
+        <script src="JavaScript/faleConosco.js"></script>
     </body>
 </html>

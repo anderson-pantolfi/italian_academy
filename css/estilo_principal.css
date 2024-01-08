@@ -251,6 +251,11 @@ header .divisao_principal {
     color: white;
 }
 
+.copyright p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
     /* header */

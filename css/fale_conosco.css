@@ -2,14 +2,77 @@
 
 :root {
     --font-family: Helvetica, arial, sans-serif;
+    --cor_fondo_vermelho_escuro: #332626;
+    --cor_fundo_vermelho_claro: #b61919;
+    --cor_font_hover_vemelho_branco: #fce2e2;
 }
 
+main {
+    background-color: var(--cor_font_hover_vemelho_branco);
+}
+
+h3.faleconosco {
+    padding-top: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.8em;
+    font-family: var(--font-family);
+}
+
+#faleConosco {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#outrasFormasContato {
+    margin: 50px 0px 50px 40px;
+    padding: 30px 20px 10px;
+    width: 40%;
+    height: 300px;
+    border: 2px solid rgb(158, 157, 157);
+    background-color: rgb(228, 226, 226);
+}
+
+#outrasFormasContato h4 {
+    margin-bottom: 50px; 
+    text-align: center;
+    font-size: 1.8em;
+    font-family: var(--font-family);
+}
+
+#outrasFormasContato p.telefone {
+    font-size: 1.5em;
+    font-family: var(--font-family);
+    line-height: 50px;
+}
+
+#outrasFormasContato a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: var(--font-family);
+    color: black;
+}
+
+#outrasFormasContato a:hover {
+    text-decoration: underline;
+    color: var(--cor_fundo_vermelho_claro);
+}
+
+#div-formulario { 
+    margin: 50px 60px 50px 0px;
+    padding: 30px 20px 30px;
+    width: 50%;
+    border: 2px solid rgb(158, 157, 157);
+    background-color: rgb(228, 226, 226);
+}
 
 form {
-    width: 44%;
-    margin: 50px auto;
+    width: 95%;
+    margin: auto;
+    border: 1px solid rgb(202, 200, 200);
     padding: 5px 10px 10px;
-    border: 2px solid black;
+    background-color: white;
 }
 
 fieldset {
@@ -54,12 +117,26 @@ form label.verifica_aluno  input{
     width: auto;
 }
 
-form label select {
+form label select#motivo_contato {
     text-transform: uppercase;
     text-align: center;
+}
+
+form div#divrespostaPersonalizada {
+    display: none;
 }
 
 form label textarea {
     width: 100%;
     height: 300px;
+}
+
+#mapa {
+    padding-bottom: 40px;
+}
+
+#area_mapa {
+    border: 2px solid rgb(158, 157, 157);
+    width: 80%;
+    margin: auto;
 }
