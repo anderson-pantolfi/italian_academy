@@ -20,7 +20,7 @@ effectTyperWriter(titulo);
 let validarformulario = {
   handleSubmit:(event) => {
     event.preventDefault();
-    let enviar = false;
+    let enviar = true;
     let inputs = form.querySelectorAll('input');
 
     validarformulario.limparerro();
@@ -33,6 +33,7 @@ let validarformulario = {
             validarformulario.exibirerro(input, check);
         }
     }
+
     if(enviar) {
       form.submit();
     }
@@ -56,7 +57,7 @@ let validarformulario = {
           return `campo deve conter no maximo ${objetoregras.max} caracteres`
         }
 
-        if(email.value !== ""){
+        if(email.value !== "" && input === email){
             padraoemail= /[a-zA-Z0-9]+([._%+-]+[a-zA-Z0-9]+)*@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/
             if(!padraoemail.test(input.value)) {
                 return "email invalido"
