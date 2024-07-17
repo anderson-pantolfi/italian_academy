@@ -5,11 +5,11 @@ Este é um projeto conceitual de uma escola fictícia de idiomas chamada Italian
 
 ### Sobre o Projeto:
 
-O objetivo deste projeto foi aplicar e aprimorar habilidades em programação, bem como explorar o design de interfaces. Italian Academy não é uma entidade real, mas sim um exercício de aprendizado e prática para demonstrar minhas capacidades técnicas.
+O objetivo deste projeto foi aplicar e aprimorar habilidades em programação, bem como explorar o design de interfaces. Italian Academy não é uma entidade real, mas sim um exercício aprendizado e prática para demonstrar minhas capacidades técnicas.
 
 ### Tecnologias Utilizadas:
 
-**Linguagens de Programação:** HTML, CSS
+**Linguagens de Programação:** HTML, CSS, JavaScript
 
 As imagens utilizadas neste projeto foram obtidas de bancos de dados como Freepik e Pixabay, utilizando recursos licenciados gratuitos disponíveis para uso não comercial.
 
