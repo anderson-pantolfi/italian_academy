@@ -147,26 +147,25 @@
                     <div class="flex_conteiner__aula_teste">
                         <img src="assets/imagem/estudando_p.jpg" alt="garoto estudando com hedphone preto, varios caderno na mesa">
                     
-                        <form method="post">
+                        <form method="post" class="validarform">
                             <label for="nome">Nome Completo:<span style="color: red;">*</span><br />
-                                <input type="texto" class="dados_do_usuario" name="name" required minlength="3" maxlength="60" id="nome">
+                                <input type="texto" class="dados_do_usuario" name="name" id="nome" data-regras='{"requered":"yes", "min": 15, "max": 50}'>
                             </label>
 
                             <label for="data_nacimento">Data de Nacimento<span style="color: red;">*</span><br/>
-                                <input type="date" class="dados_do_usuario" id="data_nacimento" required>
+                                <input type="date" class="dados_do_usuario" id="data_nacimento" data-regras='{"requered":"yes"}'>
                             </label>
 
-
                             <label for="telefone">Telefone:<br>
-                                <input type="tel" class="dados_do_usuario" name="phone" minlength="20" maxlength="15" placeholder="(xx) xxxx-xxxx" pattern="^\([1-9]{2}\) [1-9][0-9]{3}-[0-9]{4}$" title="(xx) xxxx-xxxx" id="telefone">
+                                <input type="tel" class="dados_do_usuario" name="phone" placeholder="(xx) xxxx-xxxx" title="(xx) xxxx-xxxx" id="telefone" data-regras='{"min": 14, "max": 14}'>
                             </label>
 
                             <label for="celular">Celular:<span style="color: red;">*</span><br />
-                                <input type="tel" class="dados_do_usuario" name="phone" required minlength="15" maxlength="20" placeholder="(xx) 9xxxx-xxxx" pattern="^\([1-9]{2}\) 9[1-9][0-9]{3}-[0-9]{4}$" title="(xx) 9xxxx-xxxx" id="celular">
+                                <input type="tel" class="dados_do_usuario" name="phone" placeholder="(xx) 9xxxx-xxxx" title="(xx) 9xxxx-xxxx" id="celular" data-regras='{"requered":"yes", "min": 15, "max": 15}'>
                             </label>
                             
                             <label for="email">E-MAIL:<span style="color: red;">*</span><br />
-                                <input type="email" class="dados_do_usuario" placeholder="email_valido@gmail.com" pattern="[a-zA-Z0-9]+([._%+-]+[a-zA-Z0-9]+)*@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$" required id="email">
+                                <input type="email" class="dados_do_usuario" placeholder="email_valido@gmail.com" id="email" data-regras='{"requered":"yes"}'>
                             </label>
 
                             <input type="submit" value="ENVIAR" class="botao_enviar">
