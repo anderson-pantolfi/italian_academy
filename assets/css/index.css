@@ -218,6 +218,7 @@ label {
 
 input{
     width: 800px;
+    border-radius: 15px;
 }
 
 .dados_do_usuario {
@@ -227,6 +228,12 @@ input{
     font-size: 30px;
     text-align: center;
     color: var(--color-font-preto);
+}
+
+.erro {
+    background-color: #E00000;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .botao_enviar {
