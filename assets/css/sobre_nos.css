@@ -105,6 +105,12 @@
     text-transform: uppercase;
 }
 
+#sobre_nos p.frase_final {
+    text-align: center; 
+    font-size: 1.1em; 
+    font-family: var(--font-family);
+}
+
 #sobre_nos .historia_italian_academy img {
     display: block;
     border: 2px solid black;

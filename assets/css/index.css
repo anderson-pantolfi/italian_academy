@@ -12,11 +12,87 @@
     clear: both;
 }
 
-/* APRESNETAÇÃO ESCOLA */
+#banner {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 31.25%;
+    height: 560px;
+}
+
+
+#banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 1400px;
+    height: 550px;
+    object-fit: cover;
+}
+
+.fundopretovideo {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+
+.textbanner {
+  position: relative;
+  z-index: 3;
+  width: 75%;
+  margin: auto;
+  height: 550px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.titulo_apresentacao {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-family: 'cocogoose-condensed-trial-light', sans-serif;
+  line-height: 45px;
+}
+
+.titulo_aapresentacao::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* APRESENTAÇÃO ESCOLA */
 #apresentacao_escola {
     display: flex;
     flex-flow: row wrap;
-    background-color: #053c74;
+    background: #2a1616; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #8d4343,
+      #3f1f1f
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #8d4343,
+      #3f1f1f
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #f9f9f9;
     margin: -10px 0px 25px 0px;
     padding-left: 30PX;
     padding-bottom: 30px;
@@ -24,7 +100,7 @@
 }
 
 .imagem_rua_italia {
-    margin-top: 150px;
+    margin-top: 50px;
     margin-left: 15px;
     margin-right: 10px;
     padding: 0px;
@@ -34,25 +110,30 @@
     margin: 40px 10px 20px 40px;
     width: 50%;
     font-family:  var(--font-family);
-    color: var(--color-font-branco);
     line-height: 28px;
 }
 
-
-.titulo_aprensenta {
-    text-transform: uppercase;
-    font-size: 1.15em;
-}
-
 .texto {
-    font-size: 1em;
+    font-size: 1.8em;
 }
 
-.frase_final {
-    text-align: center; 
-    font-size: 1.1em; 
+a.saiba_mais {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+.saiba_mais:visited {
+    color: #f9f9f9;
+}
+
+.saiba_mais:hover {
+    color: rgb(116, 1, 1);
+    text-decoration: underline;
     font-family: var(--font-family);
 }
+
 
 /* diferencial */
 #diferencial {
@@ -100,7 +181,7 @@
 
 /*formulario aula teste */
 #aula_teste {
-    background-color: #074e44;
+    background-color: var(--cor_fundo_vemelho_medio);
     padding-top: 25px;
     padding-bottom: 20px;
     font-family: var(--font-family);
@@ -157,7 +238,7 @@ input{
 }
 
 .botao_enviar:hover {
-    background-color: rgb(139, 7, 7);
+    background-color: rgb(224, 12, 12);
     color: var(--color-font-branco);
 }
 
@@ -180,8 +261,15 @@ form > h5 {
 /* depoimentos */
 
 #depoimentos_aluno {
-    background-color: rgb(233, 230, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
     text-align: center;
+    color: #000;
     padding: 50px;
 }
 
@@ -192,37 +280,64 @@ form > h5 {
 }
 
 
-.flex_conteiner__depoimentos {
+.carrosel {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 90vw;
+    overflow: hidden;
 }
 
-.depoimento {
-    margin: 30px 25px 40px 20px;
-    padding: 30px 20px 40px;
-    width: 450px;
-    background-color: white;
-    box-shadow: 3px 5px rgb(138, 137, 137);
-    line-height: 25px;
-    font-size: 1.2em;
-    font-family: var(--font-family);
-}
+    .swiper-pagination-bullet {
+        background-color: red !important;
+    }
 
-.nome_depoimento_aluno {
-    font-weight: bold;
-}
+    .swiper-pagination {
+        bottom: 34px !important;
+        transform: scale(2) !important;
+    }
 
-.conclusao_depoimentos {
-    font-family: var(--font-family);
-    font-size: 1.2em;
-    font-weight: bold;
-}
+    .swiper-button-prev, .swiper-button-next {
+        color: red !important;
+        opacity: 1 !important;
+    }
 
+    .swiper {
+        width: 100%;
+        padding-top: 80px;
+        padding-bottom: 80px !important;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        background-position: center;
+        background-size: cover;
+        background-color: white;
+        padding: 80px;
+        width: 450px;
+        height: 300px;
+        box-shadow: 3px 5px rgb(138, 137, 137);
+        line-height: 25px;
+        font-size: 1.5em;
+    }
+
+    .nome_depoimento_aluno {
+        font-weight: bold;
+    }
+
+
+    .conclusao_depoimentos {
+        font-family: var(--font-family);
+        font-size: 1.2em;
+        font-weight: bold;
+    }
 
 /* perguntas frequentes */
-
 #perguntas_frequentes {
     padding-top: 50px;
 }
