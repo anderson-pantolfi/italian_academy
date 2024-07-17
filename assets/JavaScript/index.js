@@ -1,3 +1,21 @@
+//efeito maquina de escrever Banner
+function effectTyperWriter(caracter, loop = true) {
+  const textArray = caracter.innerHTML.split("");
+  caracter.innerHTML = "";
+
+  textArray.forEach((letra, i) => {
+    setTimeout(() => (caracter.innerHTML += letra), 200 * i);
+  });
+
+  if (loop) {
+    setTimeout(() => effectTyperWriter(caracter, loop), 200 * textArray.length);
+  }
+}
+
+const titulo = document.getElementById("typeWriter");
+effectTyperWriter(titulo);
+
+// efeito silder show depoimentos
 var swiper = new Swiper(".swiper", {
     effect: "coverflow",
     grabCursor: true,
@@ -20,22 +38,5 @@ var swiper = new Swiper(".swiper", {
         prevEl: ".swiper-button-prev",
       },
   });
-
-
-  function effectTyperWriter(caracter, loop = true) {
-    const textArray = caracter.innerHTML.split("");
-    caracter.innerHTML = "";
-  
-    textArray.forEach((letra, i) => {
-      setTimeout(() => (caracter.innerHTML += letra), 200 * i);
-    });
-  
-    if (loop) {
-      setTimeout(() => effectTyperWriter(caracter, loop), 200 * textArray.length);
-    }
-  }
-  
-  const titulo = document.getElementById("typeWriter");
-  effectTyperWriter(titulo);
 
 
