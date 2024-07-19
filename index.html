@@ -139,42 +139,67 @@
                 </section>
 
                 <section id="aula_teste">
-
+                    
                     <h2>Vivencie nossa Metologia na pratica, agende ja sua aula Teste Gratuita</h2>
                     
                     <h4>A primeira experiência com o Método Italian Academy, ninguém esquece.</h4>
 
-                    <div class="flex_conteiner__aula_teste">
-                        <img src="assets/imagem/estudando_p.jpg" alt="garoto estudando com hedphone preto, varios caderno na mesa">
-                    
-                        <form method="post" class="validarform">
-                            <label for="nome">Nome Completo:<span style="color: red;">*</span><br />
-                                <input type="texto" class="dados_do_usuario" name="name" id="nome" data-regras='{"requered":"yes", "min": 15, "max": 50}'>
-                            </label>
+                    <div id="flex_conteiner__aula_teste">
+                        <div id="testoMarketing">
+                            <div class="textoSmall">com a italian Academy</div>
 
-                            <label for="data_nacimento">Data de Nacimento<span style="color: red;">*</span><br/>
-                                <input type="date" class="dados_do_usuario" id="data_nacimento" data-regras='{"requered":"yes"}'>
-                            </label>
+                            <div class="testoMedium">O seu Italiano </br> Está garantido</div>
 
-                            <label for="telefone">Telefone:<br>
-                                <input type="tel" class="dados_do_usuario" name="phone" placeholder="(xx) xxxx-xxxx" title="(xx) xxxx-xxxx" id="telefone" data-regras='{"min": 14, "max": 14}'>
-                            </label>
+                            <div class="textoBig">20 % </br> OFF*</div>
+                        </div>
+                        
+                        <div class="formulario_aula_teste">
+                            <form method="post" class="validarform">
+                                <div class="divform_inputs">   
+                                    <label for="nome">Nome Completo:<span style="color: red;">*</span><br />
+                                        <input type="texto" class="dados_do_usuario" name="name" id="nome" data-regras='{"requered":"yes", "min": 15, "max": 50}'>
+                                    </label>
+    
+                                    <label for="data_nacimento">Data de Nacimento<span style="color: red;">*</span><br/>
+                                        <input type="date" class="dados_do_usuario" id="data_nacimento" data-regras='{"requered":"yes"}'>
+                                    </label>
+    
+                                    <div class="flex_conteiner_telefone">
+                                        <label for="dddTelefone" class="ddd" >DDD:<br>
+                                            <input type="number" class="dados_do_usuario" placeholder="DDD" id="dddTelefone"  min="11" max="99">
+                                        </label>
+                                        <label for="telefone" class="labeltelefone">Telefone:<br>
+                                            <input type="tel" class="dados_do_usuario" name="phone" placeholder="xxxx-xxxx" title="xxxx-xxxx" id="telefone" data-regras='{"min": 14, "max": 14}'>
+                                        </label>
+                                    </div>
+    
+                                    <div class="flex_conteiner_telefone">
+                                        <label for="dddCelular" class="ddd" >DDD:<span style="color: red;">*</span><br />
+                                            <input type="number" class="dados_do_usuario" placeholder="DDD" id="dddCelular"  min="11" max="99" data-regras='{"requered":"yes"}'>
+                                        </label>
+                                        <label for="celular" class="labeltelefone">Celular:<span style="color: red;">*</span><br />
+                                            <input type="tel" class="dados_do_usuario" name="phone" placeholder="9xxxx-xxxx" title="9xxxx-xxxx" id="celular" data-regras='{"requered":"yes", "min": 10, "max": 10}'>
+                                        </label>
+                                    </div>
+    
+                                    <label for="email">E-MAIL:<span style="color: red;">*</span><br />
+                                        <input type="email" class="dados_do_usuario" placeholder="email_valido@gmail.com" id="email" data-regras='{"requered":"yes"}'>
+                                    </label>
+    
+                                    <div class="flex_conteiner_botao_aulaTeste">
+                                        <input type="submit" value="ENVIAR" class="botao_enviar">
+                                    </div>
+                                </div>                       
+                            </form>
 
-                            <label for="celular">Celular:<span style="color: red;">*</span><br />
-                                <input type="tel" class="dados_do_usuario" name="phone" placeholder="(xx) 9xxxx-xxxx" title="(xx) 9xxxx-xxxx" id="celular" data-regras='{"requered":"yes", "min": 15, "max": 15}'>
-                            </label>
-                            
-                            <label for="email">E-MAIL:<span style="color: red;">*</span><br />
-                                <input type="email" class="dados_do_usuario" placeholder="email_valido@gmail.com" id="email" data-regras='{"requered":"yes"}'>
-                            </label>
-
-                            <input type="submit" value="ENVIAR" class="botao_enviar">
-                            <br /><br />
-
-                            <h5>Este site é protegido por reCAPTCHA, <a href='https://policies.google.com/privacy' class="link_termo" target="_blank"> Política de Privacidade</a>  e <a href='https://policies.google.com/terms' class="link_termo" target="_blank"> Termos de Serviço</a> do Google.</h5>
-                        </form>
-
+                            <div id="Flex_conteiner_politcaprivacidade_formaulagratis">
+                                <div class="politcaprivacidade_formaulagratis">
+                                    <p>Este site é protegido por reCAPTCHA, <a href='https://policies.google.com/privacy' class="link_termo" target="_blank"> Política de Privacidade</a>  e <a href='https://policies.google.com/terms' class="link_termo" target="_blank"> Termos de Serviço</a> do Google.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </section>
 
                 <section id="depoimentos_aluno">

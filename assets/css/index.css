@@ -3,8 +3,8 @@
 :root {
     --color-font-branco: white;
     --color-font-preto: black;
-    --cor-fundo-cinza-claro: rgb(233, 230, 230);
-    --cor-fundo-cinza-escuro: rgb(150, 148, 148);
+    --cor-fundo-cinza-claro: #e9e6e6;
+    --cor-fundo-cinza-escuro: #969494;
     --font-family: Helvetica, arial, sans-serif;
 }
 
@@ -178,83 +178,147 @@ a.saiba_mais {
     font-size: 1.25em;
 }
 
-
 /*formulario aula teste */
 #aula_teste {
     background-color: var(--cor_fundo_vemelho_medio);
     padding-top: 25px;
     padding-bottom: 20px;
     font-family: var(--font-family);
-    text-shadow: 5px 5px 5px var(--color-font-preto);
     color: var(--color-font-branco);
 }
 
 #aula_teste h2, #aula_teste h4 {
-    line-height: 40px;
+    line-height: 60px;
     text-align: center;
+    text-shadow: 5px 5px 5px var(--color-font-preto);
 }
 
-.flex_conteiner__aula_teste{
+#aula_teste h2 {
+    font-size: 2em;
+}
+
+#aula_teste h4 {
+    font-size: 1.5em;
+}
+
+#flex_conteiner__aula_teste{
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row;
+}
+
+#testoMarketing {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.textoSmall {
+    font-size: 1.5em;
+}
+
+.testoMedium {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.textoBig {
+    font-size: 10em;
+    font-weight: bolder;
+}
+
+
+.formulario_aula_teste {
+    background-color: var(--cor-fundo-cinza-claro);
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px rgb(82, 80, 80);
+}
+
+.formulario_aula_teste  form {
+    margin-top: 15px;
+} 
+
+.divform_inputs {
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 10px 20px 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--color-font-preto);
+}
+
+input{
+    border-radius: 5px;
+}
+
+.dados_do_usuario {
+    padding: 5px;
+    width: 100%;
+    font-weight: 300;
+    font-family: var(--font-family);
+    font-size: 30px;;
+    text-align: center;
+    color: var(--color-font-preto);
+}
+
+.flex_conteiner_telefone {
     display: flex;
     justify-content: center;
     flex-flow: row;
 }
 
-.flex_conteiner__aula_teste img {
-    margin-top: 15px;
-    margin-right: 20px;
+.ddd {
+    width: 20%;
 }
 
-.flex_conteiner__aula_teste form {
-    margin-top: 15px
+.labeltelefone {
+   width: 65%;
 }
 
-label {
-    display: block;
-    margin: 15px 10px 20px 20px;
-    font-size: 20px;
-    text-transform: uppercase;
+.erro, .erronome, .errotel, .errocel, .erroemail{
+    color: #E00000;
+    font-weight: bold;
+    font-size: 0.6em;
 }
 
-input{
-    width: 800px;
-    border-radius: 15px;
-}
-
-.dados_do_usuario {
-    padding: 5px;
-    font-weight: 300;
-    font-family: var(--font-family);
-    font-size: 30px;
-    text-align: center;
-    color: var(--color-font-preto);
-}
-
-.erro {
-    background-color: #E00000;
-    padding: 10px;
-    border-radius: 10px;
+.flex_conteiner_botao_aulaTeste {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 15px;
 }
 
 .botao_enviar {
-    margin-left: 350px; 
     padding: 12px;   
     width: 150px;
     font-weight: bolder;
     border-radius: 20px;
 }
 
-.botao_enviar:hover {
-    background-color: rgb(224, 12, 12);
-    color: var(--color-font-branco);
+#Flex_conteiner_politcaprivacidade_formaulagratis {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
 }
 
-form > h5 {
-    text-align: center;
+.politcaprivacidade_formaulagratis {
+    width: 80%;
+}
+
+.politcaprivacidade_formaulagratis p {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: var(--font-family);
+    color: black;
 }
 
 .link_termo {
-    color: var(--color-font-branco);
     text-decoration: underline;
     text-transform: uppercase;
 }
@@ -263,8 +327,6 @@ form > h5 {
     color: red;
     flex-flow: row column;
 }
-
-
 /* depoimentos */
 
 #depoimentos_aluno {
