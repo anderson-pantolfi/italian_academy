@@ -117,8 +117,13 @@ function validarinputtelefone(input) {
   }
 
   let erro = ""
+  let numero = parseInt(input.value);
 
-  if(input.value.length < objetoregras.min) {
+  if(isNaN(numero) && input.value !== "") {
+    erro = 'só é permitido numero de 0 a 9, isso não é um numero';
+    input.style.borderColor = "red";
+    input.style.borderWidth = "3px";
+  } else if(input.value.length < objetoregras.min) {
     erro = `campo deve conter no minimo ${objetoregras.min} caracteres`
     input.style.borderColor = "red";
     input.style.borderWidth = "3px";
@@ -147,8 +152,13 @@ function validarinputcelular(input) {
   }
   
   let erro = ""
+  let numero = parseInt(input.value);
 
-  if(input.value.length < objetoregras.min) {
+  if(isNaN(numero) && input.value !== "") {
+    erro = 'só é permitido numero de 0 a 9, isso não é um numero';
+    input.style.borderColor = "red";
+    input.style.borderWidth = "3px";
+  }else if(input.value.length < objetoregras.min) {
     erro = `campo deve conter no minimo ${objetoregras.min} caracteres`
     input.style.borderColor = "red";
     input.style.borderWidth = "3px";

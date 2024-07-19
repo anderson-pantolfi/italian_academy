@@ -90,7 +90,7 @@
                 
                 <section id="diferencial">
                 
-                    <h3 class="titulo_diferencial">O Que Nos Torna Excepcionais:</h3>
+                    <h3 class="titulo_diferencial">Saiba porque a Italian Academy é a solução perfeita para você:</h3>
 
                     <div class='flex_conteiner_diferencial'>                        
                         <div class="div_diferencial">
@@ -161,15 +161,15 @@
                                     </label>
     
                                     <label for="data_nacimento">Data de Nacimento<span style="color: red;">*</span><br/>
-                                        <input type="date" class="dados_do_usuario" id="data_nacimento" data-regras='{"requered":"yes"}'>
+                                        <input type="date" class="dados_do_usuario" id="data_nacimento" data-regras='{"requered":"yes"}' title="xxxx-xxxx">
                                     </label>
     
                                     <div class="flex_conteiner_telefone">
                                         <label for="dddTelefone" class="ddd" >DDD:<br>
-                                            <input type="number" class="dados_do_usuario" placeholder="DDD" id="dddTelefone"  min="11" max="99">
+                                            <input type="number" class="dados_do_usuario" placeholder="DDD" id="dddTelefone"  min="11" max="99" pattern="^\[1-9][0-9]{3}-[0-9]{4}$" >
                                         </label>
                                         <label for="telefone" class="labeltelefone">Telefone:<br>
-                                            <input type="tel" class="dados_do_usuario" name="phone" placeholder="xxxx-xxxx" title="xxxx-xxxx" id="telefone" data-regras='{"min": 14, "max": 14}'>
+                                            <input type="tel" class="dados_do_usuario" name="phone" placeholder="xxxx-xxxx" title="xxxx-xxxx" id="telefone" data-regras='{"min": 9, "max": 9}' pattern="^\9[1-9][0-9]{3}-[0-9]{4}$" title="9xxxx-xxxx">
                                         </label>
                                     </div>
     
@@ -184,6 +184,14 @@
     
                                     <label for="email">E-MAIL:<span style="color: red;">*</span><br />
                                         <input type="email" class="dados_do_usuario" placeholder="email_valido@gmail.com" id="email" data-regras='{"requered":"yes"}'>
+                                    </label>
+
+                                    <label for="idade12">
+                                        <input type="checkbox" required id="idade12"/> Declaro ter mais de 12 anos
+                                    </label>
+
+                                    <label for="emailpromocional">
+                                        <input type="checkbox" required id="emailpromocional"/> Concordo em receber e-mails e mensagens através </br> do WhatsApp da italian Academy.
                                     </label>
     
                                     <div class="flex_conteiner_botao_aulaTeste">
