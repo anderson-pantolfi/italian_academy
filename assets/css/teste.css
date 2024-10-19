@@ -1,0 +1,96 @@
+:root {
+    --cor-de-fundo-branco: white;
+    --cor-fundo-cinza-claro: #d3d2d2;
+    --font-family: Helvetica, arial, sans-serif;
+}
+
+* {
+    font-family: var(--font-family);
+}
+
+
+#corpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:  url(../imagem/background-teste.jpg) no-repeat fixed;
+    background-color:  #302f2f;
+}
+
+#content_form_cadastro_teste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: var(--cor-fundo-cinza-claro);
+    border: black solid 1px;
+    box-shadow: 3px 3px 5px rgb(112, 112, 112);
+}
+
+#texto_apresentação h1 {
+    margin-bottom: 30px;
+    font-size: 1.9em;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#divForm_cadastro_test .text_segundario {
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    line-height: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 15px 10px 20px 10px;
+    font-size: 1.3em;
+}
+
+.obrigatorio {
+    color: red; 
+    font-size: 1.6em; 
+    font-weight: bolder;
+}
+
+input {
+    border: solid 1px black;
+    border-radius: 8px;
+}
+
+.dadosuser {
+    padding: 3px;
+    font-size: 1.5em;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+}
+
+.flex_content_contato_telefonico {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.stylediverros {
+    color: red;
+}
+
+#divButton_submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button_submit {
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
