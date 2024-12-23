@@ -1,12 +1,11 @@
-const form = document.querySelector(".validarform") as HTMLFormElement;
+const form = document.querySelector("#formCadastriAulaTeste") as HTMLFormElement;
 const nome = document.getElementById("nome") as HTMLInputElement;
 const telefone = document.getElementById("telefone") as HTMLInputElement;
 const celular = document.getElementById("celular") as HTMLInputElement;
 const email = document.getElementById("email") as HTMLInputElement;
 const botao = document.querySelector(".botao_enviar") as HTMLButtonElement;
 
-
-//efeito maquina de escrever Banner
+//efeito maquina de escrever Banner de boas vindas
 function effectTyperWriter(caracter:HTMLElement, loop = true) {
   const textArray = caracter.innerHTML.split("");
   caracter.innerHTML = "";
@@ -20,9 +19,9 @@ function effectTyperWriter(caracter:HTMLElement, loop = true) {
   }
 }
 
-const titulo = document.getElementById("typeWriter");
-if(titulo){
-  effectTyperWriter(titulo);
+const textbanner = document.getElementById("textbanner");
+if(textbanner){
+  effectTyperWriter(textbanner);
 }
 
 //validação formulario aula teste

@@ -1,5 +1,5 @@
 "use strict";
-const form = document.querySelector(".validarform");
+const form = document.querySelector("#formCadastriAulaTeste");
 const nome = document.getElementById("nome");
 const telefone = document.getElementById("telefone");
 const celular = document.getElementById("celular");
@@ -15,9 +15,9 @@ function effectTyperWriter(caracter, loop = true) {
         setTimeout(() => effectTyperWriter(caracter, loop), 200 * textArray.length);
     }
 }
-const titulo = document.getElementById("typeWriter");
-if (titulo) {
-    effectTyperWriter(titulo);
+const textbanner = document.getElementById("textbanner");
+if (textbanner) {
+    effectTyperWriter(textbanner);
 }
 let validarformulario = {
     handleSubmit: (event) => {
