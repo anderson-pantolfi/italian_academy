@@ -166,6 +166,7 @@ a.saiba_mais {
     margin: 20px 20px 15px 20px;
     box-shadow: 3px 5px rgb(138, 137, 137);
     line-height: 30px;
+    border-radius: 20px;
 }
 
 .titulo_diferencial{
@@ -174,6 +175,11 @@ a.saiba_mais {
 
 .texto_diferencial {
     font-size: 1.25em;
+}
+
+.img-diferencial {
+    margin-top: 15px;
+    border-radius: 100%;
 }
 
 /*formulario aula teste */
