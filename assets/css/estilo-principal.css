@@ -47,26 +47,30 @@ header, footer {
 
 /* header */
 
+#moblie-screen {
+    display: none;
+}
+
 header {
     display: flex;
     flex-direction: column;
 }
 
 
-header .divisao_segundaria {
+header .divisao-segundaria {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--cor_fondo_vermelho_escuro);
 }
 
-header .divisao_segundaria .outros_links {
+header .divisao-segundaria .outros-links {
     display: flex;
     align-items: center;
     padding: 20px;
 }
 
-header .divisao_segundaria .outros_links a{
+header .divisao-segundaria .outros-links a{
     margin-right: 10px;
     color: white;
     text-decoration: none;
@@ -76,18 +80,18 @@ header .divisao_segundaria .outros_links a{
     font-weight: 400;
 }
 
-header .divisao_segundaria .matricula-login {
+header .divisao-segundaria .matricula-login {
     display: flex;
     align-items: center;
     margin-right: 30px;
     padding: 15px;
 }
 
-header .divisao_segundaria .matricula-login a {
+header .divisao-segundaria .matricula-login a {
     text-decoration: none;
 }
 
-header .divisao_segundaria .matricula-login button {
+header .divisao-segundaria .matricula-login button {
     display: inline-block;
     background-color: #fa8c06;
     padding: 15px 20px;
@@ -99,26 +103,26 @@ header .divisao_segundaria .matricula-login button {
     color: white;
 }
 
-header .divisao_segundaria .matricula-login button.matricula {
+header .divisao-segundaria .matricula-login button.matricula {
     margin-right: 50px;
 }
 
-header .divisao_segundaria .matricula-login button:hover {
+header .divisao-segundaria .matricula-login button:hover {
     background-color: #df7900;
 }
 
-header .divisao_segundaria .outros_links a:hover{
+header .divisao-segundaria .outros-links a:hover{
     color: var(--cor_fundo_vermelho_claro);
 }
 
-header .divisao_principal {
+header .divisao-principal {
     display: flex;
     align-items: end;
     height: 122px;
 }
 
 /*logo*/
-#logo_cabesalho {
+#logo-cabesalho {
     background-color: var(--cor_fundo_vemelho_medio);
     margin-top: 2%;
     padding: 1% 2%;
@@ -126,10 +130,11 @@ header .divisao_principal {
     font-size: 1.3em;
     text-align: center;
     color: white;
+    height: 100%;
 }
 
 /* MENU */
-#menu_principal {
+#menu-principal {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,7 +143,7 @@ header .divisao_principal {
     height: 100%;
 }
 
-#menu_principal ul {
+#menu-principal ul {
     position: relative;
     text-align: center;
     width: 100%;
@@ -148,12 +153,12 @@ header .divisao_principal {
     padding-top: 0;
 }
 
-#menu_principal li {
+#menu-principal li {
     display: inline-block;
     margin: 0px;
 }
 
-#menu_principal a {
+#menu-principal a {
     display: block;
     text-decoration: none;
     margin: 0px;
@@ -166,11 +171,11 @@ header .divisao_principal {
     color: white;
 }
 
-#menu_principal a:hover {
+#menu-principal a:hover {
     color: var(--cor_font_hover_vemelho_branco);
 }
 
-#imagem_principal img {
+#imagem-principal img {
     position: relative;
     top: -5px;
     object-fit: cover;
@@ -180,7 +185,7 @@ header .divisao_principal {
 
 /* footer */
 
-.mapa_site {
+#mapa-site {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -191,11 +196,11 @@ header .divisao_principal {
     padding: 60px 0px 40px 90px;
 }
 
-.mapa_site div{
+#mapa-site div{
     margin-right: 150px;
 }
 
-.mapa_site a {
+#mapa-site a {
     display: flex;
     flex-direction: column;
     font-size: 1.2em;
@@ -207,11 +212,11 @@ header .divisao_principal {
     color: white;
 }
 
-.mapa_site a:hover{
+#mapa-site a:hover{
     color: var(--cor_font_hover_vemelho_branco);
 }
 
-.redes_sociais {
+#redes-sociais {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -222,24 +227,24 @@ header .divisao_principal {
     background-color: var(--cor_fundo_vermelho_claro);
 }
 
-.redes_sociais .text_social {
+#redes-sociais #text-social {
     margin-right: 40px;
     font-size: 1.4em;
     font-family: var(--font-family);
     color: white;
 }
 
-.redes_sociais .icons_social a {
+#redes-sociais #icons-social a {
     margin-right: 15px;
     color: white;
     font-size: 2em;
 }
 
-.redes_sociais .icons_social a:hover {
+#redes-sociais #icons-social a:hover {
     color: var(--cor_font_hover_vemelho_branco);
 }
 
-.copyright {
+#copyright {
     background-color: var(--cor_fondo_vermelho_escuro);
     padding-top: 20px;
     padding-bottom: 20px;
@@ -251,36 +256,39 @@ header .divisao_principal {
     color: white;
 }
 
-.copyright p {
+#copyright p {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
-    /* header */
-    header .divisao_segundaria {
+    /* footer */
+    
+    #mapa-site a {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 576px){
+    #mapa-site a {
+        font-size: 1.5em;
+    }
+} 
+
+@media only screen and (min-width: 320px) and (max-width: 1200px){
+    #big-screen{
         display: none;
     }
 
-    #logo_cabesalho {
-        font-size: 1em;
-    }
-
-
-    /* footer */
-    .mapa_site {
+    #mapa-site {
         flex-direction: column; 
         padding-left: 0px;    
     }
 
-    .mapa_site div{
+    #mapa-site div{
         margin: 0px auto 25px auto;
         width: 100%;
         text-align: center;
-    }
-    
-    .mapa_site a {
-        font-size: 1em;
     }
 }

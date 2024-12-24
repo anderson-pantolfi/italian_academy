@@ -106,7 +106,7 @@
     padding: 0px;
 }
 
-.texto_apresentacao {
+#texto_apresentacao {
     margin: 40px 10px 20px 40px;
     width: 50%;
     font-family:  var(--font-family);
@@ -210,6 +210,7 @@ a.saiba_mais {
     display: flex;
     justify-content: space-around;
     flex-flow: row;
+    flex-wrap: wrap;
 }
 
 #testoMarketingPromocional {
@@ -241,7 +242,7 @@ a.saiba_mais {
     box-shadow: 10px 10px 8px rgb(82, 80, 80);
 }
 
-#divFormularioAulaTeste  form {
+#formCadastriAulaTeste{
     padding: 20px;
     margin-top: 15px;
 } 
@@ -473,8 +474,7 @@ details {
 summary {
     display: block;
     background-color: var(--cor-fundo-cinza-claro);
-    padding: 30px;
-    padding-left: 80px;
+    padding: 20px;
     text-transform: uppercase;
     font-weight: bolder;
     font-family: var(--font-family);
@@ -518,17 +518,7 @@ a.botao_matricula {
     color: var(--color-font-branco);
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px){
-
-    #imagem_principal img {
-        width: 100%;
-    }
-    
-    #apresentacao_escola {
-        padding-left: 0px;
-        padding-top: 0px;
-    }
-
+@media only screen and (min-width: 320px) and (max-width: 1259px){
     .imagem_rua_italia {
         padding-top: 0px;
         margin: auto;
@@ -541,16 +531,39 @@ a.botao_matricula {
         width: 100%;
     }
 
-    .texto_apresentacao {
+    #texto_apresentacao {
         margin: 15px auto 20px auto;
         width: 90%;
     }
 
+    .texto{
+        line-height: 40px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    #apresentacao_escola {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    #texto_apresentacao p {
+        margin-left: 5%;
+    }
+
     /*formulario aula teste */
-    #aula_teste {
+    #section_aula_teste {
         padding-top: 15px;
         padding-bottom: 25px;
         text-shadow: 3px 3px 3px var(--color-font-preto);
+    }
+
+    #section_aula_teste h2{
+        font-size: 1.9em;
+    }
+
+    #section_aula_teste h4{
+        font-size: 1.5em;
     }
 
     .flex_conteiner__aula_teste{
@@ -560,27 +573,30 @@ a.botao_matricula {
         align-items: center;
     }
 
-    .flex_conteiner__aula_teste img {
-        margin-top: 15px;
-        margin-right: 10px;
-        margin-left: 10px;
-        width: 80%;
+    #testoMarketingPromocional {
+        margin-top: 50px;
     }
 
-    form {
-        margin-top: 15px;
-        margin-right: 30%;
-        margin-left: 10%;
-        width: 70%;
+    #textSmall {
+        font-size: 2.5em;
+    }
+    
+    #testMedium {
+        font-size: 4em;
+        font-weight: bold;
+    }
+    
+    #textBig {
+        font-size: 8em;
+        font-weight: bolder
     }
 
+    #divFormularioAulaTeste{
+        text-shadow: none;
+    }
+    
     label {
-        width: 80%;
         font-size: 1.1em;
-    }
-
-    input {
-        width: 150%;
     }
 
     .dados_do_usuario {
@@ -589,11 +605,16 @@ a.botao_matricula {
         font-size: 1.2em;
     }
 
-    form > h5 {
+    form  h5 {
         margin-left: 30%;
     }
 
     .botao_enviar {
-        margin-left: 35%;    
+        display: block;
+        margin: auto;
+    }
+
+    details {
+        margin-left: 15px;
     }
 }
