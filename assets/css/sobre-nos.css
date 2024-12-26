@@ -37,6 +37,8 @@
     z-index: 2;
 }
 
+/*banner 1*/
+
 .banner {
     display: flex;
     flex-flow: row wrap;
@@ -79,6 +81,8 @@
 .banner .imagem img {
     width: 100%;
 }
+
+/*nossa historia*/
 
 #sobre_nos {
     margin-bottom: 40px;
@@ -194,4 +198,80 @@
     margin-left: 5%;
     font-family: var(--font-family);
     font-size: 1.15em;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1200px){
+
+    #banner_pincipal{
+        margin-top: 80px;
+    }
+
+    .titulos_pincipais_text h1 {
+        line-height: 60px;
+    }
+
+    .titulos_pincipais_text h2 {
+        line-height: 50px;
+    }
+
+    /*banner 1*/
+
+    .banner .divisao_1 {
+        margin: auto;
+        width: 80%;
+    }
+
+    .banner .texto h2{
+        line-height: 60px;
+    }
+
+    .banner .icones_banner img{
+        width: 200px;
+    }
+
+    .banner .imagem {
+        width: 90%;
+        margin: auto;
+    }
+
+    /*nossa historia*/
+
+    #sobre_nos, #missao, #valores, #metas {
+        margin-bottom: 50px;
+    }
+
+    #sobre_nos p, #missao p, #valores p, #metas p {
+        line-height: 40px;
+    }
+
+    #sobre_nos div.Crescendo {
+        flex-direction: column;
+    }
+
+    #sobre_nos .Crescendo .Crescendo_text h4 {
+        margin-top: 60px;
+    }
+
+    #sobre_nos .Crescendo .Crescendo_text, #missao, #valores, #metas {
+        width: 80%;
+    }
+
+    #sobre_nos .Crescendo img {
+        width: 90%;
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 991px){
+    .banner .icones_banner{
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .banner .icones_banner{
+        flex-direction: row;
+        gap: 30px;
+    }
 }

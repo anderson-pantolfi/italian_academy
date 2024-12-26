@@ -20,7 +20,6 @@
     height: 560px;
 }
 
-
 #bannerBoasVindas video {
     position: absolute;
     top: 0;
@@ -52,7 +51,6 @@
   justify-content: center;
   text-align: center;
 }
-
 
 #textbanner {
   text-transform: uppercase;
@@ -411,8 +409,7 @@ input{
     border-radius: 5px;
     padding: 25px;
     width: 450px;
-    height: 500px;
-    
+    height: 500px;   
     line-height: 25px;
     font-size: 1.2em;
 }

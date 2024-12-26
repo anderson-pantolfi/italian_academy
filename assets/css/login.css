@@ -11,7 +11,7 @@ main {
     display: flex;
     justify-content: flex-end;
     padding: 50px;
-    background-image: url('../imagem/fundo-login.jpg');
+    background-image: url('../imagem/fundo_login.jpg');
 }
 
 #div-login {
@@ -45,17 +45,13 @@ main {
     font-family: var(--font-family);
 }
 
-#div-login #usuario{
-    margin-bottom: 50px;
-}
-
 #div-login input {
+    margin-bottom: 50px;
     width: 100%;
     font-size: 2em;
 }
 
 #div-login .button_entrar {
-    margin-top: 30px;
     margin-bottom: 30px;
     padding: 20px 40px;
     border-radius: 20px;
@@ -87,4 +83,46 @@ main {
 
 footer .redes_sociais{
     padding-top: 30px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1200px){
+    #div-login {
+        margin: auto;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    #div-login {
+        width: 80%;
+    }
+} 
+
+@media only screen and (min-width:320px) and (max-width: 767px){
+
+    #div-login {
+        width: 100%;
+    }
+
+    #div-login form {
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (min-width: 548px) and (max-width: 767px){
+    #div-login {
+        height: 600px;
+    }
+}
+
+@media only screen and (min-width: 448px) and (max-width: 547px){
+    #div-login {
+        height: 680px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 447px) {
+    #div-login {
+        height: 800px;
+    }
 }

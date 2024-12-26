@@ -5,11 +5,14 @@
 
         <link rel="stylesheet" type="text/css" href="assets/css/teste.css" />
         <link rel="stylesheet" type="text/css" href="assets/css/estilo-principal.css"/>
-        <link rel="icon" type="x-icon" href="assets/imagem/icon-italy.png" />
+        <link rel="icon" type="x-icon" href="assets/imagem/icon_italy.png" />
         <!-- Este link importa fonte da logo do site -->
         <link href="https://www.dafontfree.net/embed/Y29jb2dvb3NlLWNvbmRlbnNlZC10cmlhbC1saWdodCZkYXRhLzE1MjgvYy8xNzE1NjgvQ29jb2dvb3NlLUNvbmRlbnNlZC1MaWdodC10cmlhbC50dGY" rel="stylesheet" type="text/css"/>
 
         <meta charset="UTF-8" />
+        <meta name="keywords" content="italia, italiano, aprender_idiomas, bilinque, Poligota, ensino_idiomas_EAD, ligua_do_amor">
+        <meta name="author" content="anderson pantolfi moraes">
+        <meta name="description" content="Esta é uma plataforma destina-se aquele que tem o desejo de aprender a língua italiana com uma metodologia inovadora, mas sentem que não possuem tempo para se dedicar a um curso, o nosso curso visa adaptar no seu estilo de vida de acordo com o tempo que você tem disponível para estudar.">
         <meta name="viewport" content="width=device-width, incial-scale=1.0" />
     </head>
 
@@ -58,42 +61,43 @@
 
                     <div id="texto_apresentação">
                             <h1>SEJA BEM VINDO AO TESTE DE ITALIANO <br> DA ITALIAN ACADEMY</h1>
-
-                            
                     </div>
 
                     <div id="divForm_cadastro_teste">
-                        <div class="text_segundario">Antes de começar o seu teste preencha os campos abaixo:</div>
-                            <form method="post" id="form_cadastro_teste">
-                                <label for="nome">NOME COMPLETO:<span class="obrigatorio">*</span></br>
-                                    <input type="text" placeholder="NOME COMPLETO" class="dadosuser" id="nome" date-regras='{"requered":"yes"}' />
+                        <div id="text_segundario">
+                            <p>Antes de começar o seu teste preencha os campos abaixo:</p>
+                        </div>
+
+                        <form method="post" id="form_cadastro_teste">
+                            <label for="nome">NOME COMPLETO:<span class="obrigatorio">*</span></br>
+                                <input type="text" placeholder="NOME COMPLETO" class="dadosuser" id="nome" date-regras='{"requered":"yes"}' />
+                            </label>
+
+                            <label for="email">EMAIL:<span class="obrigatorio">*</span></br>
+                                <input type="email" placeholder="EMAIL VALIDO" class="dadosuser" id="email" date-regras='{"requered":"yes"}'>
+                            </label>
+
+                            <div class="flex_content_contato_telefonico">
+                                <label for="ddd" class="div_ddd">DDD:<span class="obrigatorio">*</span></br>
+                                    <input type="number" min="11" max="99" class="dadosuser" placeholder="DDD" date-regras='{"requered":"yes"}'>
                                 </label>
 
-                                <label for="email">EMAIL:<span class="obrigatorio">*</span></br>
-                                    <input type="email" placeholder="EMAIL VALIDO" class="dadosuser" id="email" date-regras='{"requered":"yes"}'>
+                                <label for="telefone" class="div_phoneNumber">CELULAR/WHATZAPP:<span class="obrigatorio">*</span></br>
+                                    <input type="tel" placeholder="9xxxx-xxx" id="telefone" class="dadosuser" date-regras='{"requered":"yes"}'>
+                                </label>
+                            </div>
+                            
+                                <label for="idade12">
+                                    <input type="checkbox" required id="idade12"/> Declaro ter mais de 12 anos
                                 </label>
 
-                                <div class="flex_content_contato_telefonico">
-                                        <label for="ddd" class="div_ddd">DDD:<span class="obrigatorio">*</span></br>
-                                            <input type="number" min="11" max="99" class="dadosuser" placeholder="DDD" date-regras='{"requered":"yes"}'>
-                                        </label>
-
-                                        <label for="telefone" class="div_phoneNumber">CELULAR/WHATZAPP:<span class="obrigatorio">*</span></br>
-                                            <input type="tel" placeholder="9xxxx-xxx" id="telefone" class="dadosuser" date-regras='{"requered":"yes"}'>
-                                        </label>
-                                </div>
-                                
-                                   <label for="idade12">
-                                        <input type="checkbox" required id="idade12"/> Declaro ter mais de 12 anos
-                                    </label>
-
-                                    <label for="emailpromocional">
-                                        <input type="checkbox" required id="emailpromocional"/> Concordo em receber e-mails e mensagens através </br> do WhatsApp da italian Academy.
-                                    </label>
-                                <div id="divButton_submit">
-                                    <input type="submit" value="INICIA O TESTE" id="button_submit">
-                                </div>
-                            </form>
+                                <label for="emailpromocional">
+                                    <input type="checkbox" required id="emailpromocional"/> Concordo em receber e-mails e mensagens através </br> do WhatsApp da italian Academy.
+                                </label>
+                            <div id="divButton_submit">
+                                <input type="submit" value="INICIA O TESTE" id="button_submit">
+                            </div>
+                        </form>
                     </div>
 
                 </div>

@@ -268,13 +268,13 @@ header .divisao-principal {
     #mapa-site a {
         font-size: 1em;
     }
-}
+} 
 
 @media only screen and (min-width: 481px) and (max-width: 576px){
     #mapa-site a {
         font-size: 1.5em;
     }
-} 
+}  
 
 @media only screen and (min-width: 320px) and (max-width: 1200px){
     #big-screen{
@@ -283,7 +283,7 @@ header .divisao-principal {
 
     #mapa-site {
         flex-direction: column; 
-        padding-left: 0px;    
+        padding-left: 0px;            
     }
 
     #mapa-site div{
@@ -291,4 +291,4 @@ header .divisao-principal {
         width: 100%;
         text-align: center;
     }
-}
+} 
