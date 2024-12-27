@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+:root {
+    --font-family-default: Helvetica, arial, sans-serif;
+    --cor_fundo_vemelho_escuro:  #822C2C;
+    --cor_fundo_vermelho_medio: #b61919;
+    --cor_fundo_vermelho_claro: #c25a5a;
+}
+
+header{
+    z-index: 0;
+}
+
+#titulo {
+    background-color: var(--cor_fundo_vemelho_escuro);
+    padding: 30px;
+}
+
+#voltar{
+    width: 150px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgb(179, 6, 6);
+    font-family: var(--font-family-default);
+    font-weight: bolder;
+    color: white;
+}
+
+#voltar:hover{
+    background-color: white;
+    color: var(--cor_fundo_vermelho_medio);
+}
+
+#titulo h1, #paragrafos-apresentação p{    
+    font-family: var(--font-family-default);
+    font-weight: bolder;
+    text-align: center;    
+    text-transform: capitalize;
+    color: white;
+}
+
+#titulo h1{
+    font-size: 3.5em;   
+}
+
+#paragrafos-apresentação {
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 250px;
+    background-color: var(--cor_fundo_vermelho_claro);
+    text-align: center;
+}
+
+#paragrafos-apresentação p{
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+#niveis-testes {
+    display: flex;
+    justify-content: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    z-index: 1;
+}
+
+.nivel {
+    padding: 30px;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    top: -60px;
+    background-color: #F9F9F9;
+    border: 2px solid black; 
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px rgb(177, 177, 177);
+    text-align: center;
+    font-family: var(--font-family-default);
+}
+
+.nivel h1, .nivel h3, .nivel p{
+    margin-bottom: 30px;
+}
+
+.nivel h1{
+    font-size: 2em;
+}
+
+.nivel p{
+    font-size:1.2em;
+}
+
+.nivel button{
+    padding: 10px;
+    width: 140px;
+    border-radius: 15px;
+    background-color: var(--cor_fundo_vermelho_medio);
+    color: white;
+    font-family: var(--font-family-default);
+    font-weight: bolder;
+}
+
+.nivel button:hover {
+    background-color: var(--cor_fundo_vemelho_escuro);
+}

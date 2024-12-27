@@ -19,7 +19,7 @@ const validarformularioteste = {
 
         if(enviar) {
             formulario.submit();
-            window.location.href = "teste-questao.html";
+            window.location.href = "selected-nivel.html";
         };
     },
 
