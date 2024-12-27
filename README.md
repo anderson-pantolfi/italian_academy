@@ -13,7 +13,7 @@ O objetivo deste projeto foi aplicar e aprimorar habilidades em programação, b
 
 **Bibliotecas:** Swiper - biblioteca JS controle deslizante.
 
-As imagens utilizadas neste projeto foram obtidas de bancos de dados como Freepik e Pixabay, utilizando recursos licenciados gratuitos disponíveis para uso não comercial e imagens geradas através de Iteligencia artificiais
+As imagens utilizadas neste projeto foram obtidas de bancos de dados como Freepik e Pixabay, utilizando recursos licenciados gratuitos disponíveis para uso não comercial e imagens geradas através de Inteligências artificiais
 
 ## Termos de Uso
 ---
