@@ -9,9 +9,11 @@ O objetivo deste projeto foi aplicar e aprimorar habilidades em programação, b
 
 ### Tecnologias Utilizadas:
 
-**Linguagens de Programação:** HTML, CSS, JavaScript
+**Linguagens de Programação:** HTML, CSS, JavaScript, TypeScript
 
-As imagens utilizadas neste projeto foram obtidas de bancos de dados como Freepik e Pixabay, utilizando recursos licenciados gratuitos disponíveis para uso não comercial.
+**Bibliotecas:** Swiper - biblioteca JS controle deslizante.
+
+As imagens utilizadas neste projeto foram obtidas de bancos de dados como Freepik e Pixabay, utilizando recursos licenciados gratuitos disponíveis para uso não comercial e imagens geradas através de Iteligencia artificiais
 
 ## Termos de Uso
 ---
