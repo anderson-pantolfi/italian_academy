@@ -1,112 +1,101 @@
-:root {
-    --cor-de-fundo-branco: white;
-    --cor-fundo-cinza-claro: #d3d2d2;
-    --font-family: Helvetica, arial, sans-serif;
+main{
+    background-color: #f9f9f9d3;
 }
 
-* {
-    font-family: var(--font-family);
+#progress{
+    height: 80px;
+} 
+#progress-bar{
+    width: 90%;
+    margin: 20px 50px;
 }
 
-
-#corpo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background:  url(../imagem/background-teste.jpg) no-repeat fixed;
-    background-color:  #302f2f;
+#titulo-progress, #quantidade-question {
+    width: 90%;
+    margin: 20px auto;
 }
 
-#content_form_cadastro_teste {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 60%;
-    padding: 30px;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    background-color: var(--cor-fundo-cinza-claro);
-    border: black solid 1px;
-    box-shadow: 3px 3px 5px rgb(112, 112, 112);
-}
-
-#texto_apresentação h1 {
-    margin-bottom: 30px;
-    font-size: 1.9em;
-    line-height: 40px;
-    text-align: center;
-    font-weight: bolder;
-}
-
-#divForm_cadastro_teste #text_segundario p{
-    margin-bottom: 30px;
-    font-size: 1.5em;
-    line-height: 25px;
-    text-align: center;
-    font-weight: bold;
-}
-
-label {
-    display: block;
-    margin: 15px 10px 20px 10px;
+#titulo-progress {
+    font-family: var(--font-family-default);
+    color: var(--cor_fundo_vermelho_medio);
     font-size: 1.3em;
     font-weight: bolder;
+    text-transform: uppercase;
 }
 
-.obrigatorio {
-    color: red; 
-    font-size: 1.6em; 
+#progress-bar {
+    height: 20px;
+    background-color: #00FF00;
+    border-radius: 15px;
+    border: 2px solid gray;
+    transition: all ease .5s;
+}
+
+#quantidade-question{
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-family: var(--font-family-default);
+    text-align: right;
+}
+
+#question-area, #result {
+    display: none;
+}
+
+#question-area {
+    margin: 30px auto 60px;
+    padding: 30px;
+    width: 700px;
+} 
+
+#question ,#options{
+    margin: 30px auto;    
+    text-align: center;
+    font-family: var(--font-family-default);
     font-weight: bolder;
 }
 
-input {
-    border: solid 1px black;
-    border-radius: 8px;
+#question {
+    font-size: 2em;
 }
 
-.dadosuser {
-    padding: 3px;
-    font-size: 1.5em;
-    width: 100%;
-    text-transform: uppercase;
-    font-weight: 300;
-    text-align: center;
+#options div{
+    margin-bottom: 5px;
+    padding: 20px;
+    padding-left: 80px;
+    background-color: rgba(0, 0, 0, 0.3);;
+    text-align: left;
 }
 
-.flex_content_contato_telefonico {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+#options div:hover{
+    background-color: var(--cor_fundo_vermelho_medio);
+    color: white;
 }
 
-.stylediverros {
-    color: red;
-}
-
-#divButton_submit {
-    display: flex;
+#result{
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 30px auto;
+    padding: 40px;
+    width: 400px;
+    border: 2px solid rgb(95, 95, 95);
+    border-radius: 30px;    
+    background-color: rgb(226, 223, 223);
 }
 
-#button_submit {
-    padding: 15px;
-    border: 2px solid black;
-    border-radius: 10px;
+#yourlevel{    
+    margin-bottom: 60px;
+    font-family: var(--font-family-default);
+    font-size: 2.2em;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px){
-    #content_form_cadastro_teste{
-        width: 90%;
-    }
-
-    #divForm_cadastro_teste #text_segundario p{
-        font-size: 1.15em;
-    }
-
-    label{
-        font-size: 1.05em;
-    }
+#quantidadeacertos{
+    margin-bottom: 30px;
+    font-family: var(--font-family-default);
+    font-weight: bold;
+    font-size: 1.2em;
 }

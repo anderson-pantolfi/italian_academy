@@ -4,7 +4,7 @@ interface typequestion {
     answer: number,
 }
 
-const texte1: typequestion[] = [
+const teste1: typequestion[] = [
     {
         question:"Di dove sei?",
         option: [

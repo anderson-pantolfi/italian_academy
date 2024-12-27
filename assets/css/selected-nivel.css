@@ -16,7 +16,7 @@ header{
     padding: 30px;
 }
 
-#voltar{
+#voltar, #pagenivel{
     width: 150px;
     padding: 15px;
     border-radius: 15px;
@@ -26,7 +26,7 @@ header{
     color: white;
 }
 
-#voltar:hover{
+#voltar:hover, #pagenivel:hover{
     background-color: white;
     color: var(--cor_fundo_vermelho_medio);
 }

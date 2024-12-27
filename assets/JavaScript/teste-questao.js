@@ -1,5 +1,5 @@
 "use strict";
-const texte1 = [
+const teste1 = [
     {
         question: "Di dove sei?",
         option: [
