@@ -443,7 +443,7 @@ const teste2:typequestion[] = [
  },
 
  {
-    question: "Ho visitato l’Italia.",
+    question: "Ho visitato l'Italia.",
     option: [
         "anno scorso",
         "fa un anno",
@@ -482,3 +482,863 @@ const teste2:typequestion[] = [
     answer: 1,
  },
 ]
+
+const teste3:typequestion[] = [
+    {
+        question:"Da piccolo:",
+        option: [
+            "giocavo a calcio tutti i giorni.",
+            "ho giocato a calcio tutti I giorni.",
+            "gioco a calcio tutti i giorni.",
+        ],
+        answer: 0,
+    },
+
+    {
+        question:"Oggi Claudia:",
+        option: [
+            "si è messa un paio di camicie nere di pelle.",
+            "si è messa un paio di cinture nere di pelle.",
+            "si è messa un paio di pantaloni neri di pelle.",
+        ],
+        answer: 2,
+    },
+
+
+    {
+        question:"Com'è Alessandra?",
+        option: [
+            "È giovane, snella, alta, bella con i capelli lunghi e castani. Ha gli occhi azzurri ed è molto simpatica.",
+            "È giovane, snella, alta, bella con i capelli lungo e castano. Ha gli occhi azzurri ed è molto simpatica.",
+            "È giovane, snello, alto, bello con i capelli lunghi e castani. Ha gli occhi azzurri ed è molto simpatica.",
+        ],
+        answer: 0,
+    },
+
+
+    {
+        question:"Dove hai comprato il tuo computer?",
+        option: [
+            "Lo ho comprato in un negozio del centro.",
+            "L'ho comprato in un negozio del centro.",
+            "Ho comprato in un negozio del centro",
+        ],
+        answer:1,
+    },
+
+    {
+        question:"Senti, ti volevo fare una proposta.",
+        option: [
+            "Dimmi pure.",
+            "Mi dica.",
+            "Non fa niente.",
+        ],
+        answer: 0,
+    },
+
+    {
+        question:"Mentre io...",
+        option: [
+            "ho studiato, mia madre ha cucinato.",
+            "ho studiato, mia madre cucinava.",
+            "studiavo, mia madre cucinava.",
+        ],
+        answer: 2,
+    },
+
+    {
+        question:"Scegli l'opzione corretta:",
+        option: [
+            '"Quante ore dura il volo Roma-Londra?" "Circa due".',
+            '"Quanto viene il biglietto scontato del volo Roma-Londra?" "Circa due".',
+            '"Vorrei delle informazioni sulla durata del volo Roma-Londra." "Circa due".',
+        ],
+        answer: 2,
+    },
+
+    {
+        question:"Lui è il ragazzo:",
+        option: [
+            "di cui ti ho parlato.",
+            "che ti ho parlato.",
+            "cui ti ho parlato.",
+        ],
+        answer: 0,
+    },
+
+    {
+        question:"Mi sento sempre stanca e stressata. Cosa posso fare?",
+        option: [
+            "Evita di fare sport, non bere acqua e mangia molta carne.",
+            "Fa' sport, bevi molta acqua e non mangiare troppa carne",
+            "Fa' sport, bevi molta acqua e non mangia molta carne.",
+        ],
+        answer: 1,
+    },
+
+    {
+        question:"Non mi piace il caffè:",
+        option: [
+            "salato, ci metto sempre due cucchiaini di zucchero.",
+            "dolce, metto sempre due cucchiaini di zucchero.",
+            "amaro, ci metto sempre due cucchiaini di zucchero.",
+        ],
+        answer: 2,
+    },
+
+    {
+        question:"Secondo me le diete:",
+        option: [
+            "non servono a niente.",
+            "non serve a niente.",
+            "servono a niente.",
+        ],
+        answer: 0,
+    },
+
+    {
+        question:"È stata una vacanza infernale! L'albergo era sporco, faceva brutto tempo e io e mio marito abbiamo litigato!",
+        option: [
+            "Che bello!",
+            "Che peccato, mi dispiace.",
+            "Complimenti!",
+        ],
+        answer: 1,
+    },
+
+    {
+        question:"Davvero?",
+        option: [
+            "Non sapevo che avevi vissuto a Londra!",
+            "Non ho saputo che avevi vissuto a Londra!",
+            "Non conoscevo che avevi vissuto a Londra!",
+        ],
+        answer: 0,
+    },
+
+    {
+        question:"Te lo chiedo per favore:",
+        option: [
+            "sei gentile con gli ospiti stasera.",
+            "sii gentile con gli ospiti stasera.",
+            "sta' gentile con gli ospiti stasera.",
+        ],
+        answer: 1,
+    },
+
+    {
+        question:"Dottore, ho un terribile mal di schiena, cosa posso fare?",
+        option: [
+            "Rimani a letto, riposati, prendi questi antidolorifici e torna fra una settimana.",
+            "Non resti a casa, prenda un'aspirina e faccia dello sport.",
+            "Rimanga a letto, prenda questi antidolorifici e torni fra una settimana.",
+        ],
+        answer: 2,
+    },
+
+    {
+        question:"Per imparare una lingua straniera:",
+        option: [
+            "è migliore fare un corso e studiare con impegno.",
+            "è benissimo fare un corso e studiare con impegno.",
+            "è meglio fare un corso e studiare con impegno.",
+        ],
+        answer: 2,
+    },
+
+    {
+        question:"Per trovare un buon lavoro oggigiorno:",
+        option: [
+            "bisogna essere flessibili e laboriosi.",
+            "bisogno essere flessibili e laboriosi.",
+            "si bisogna essere flessibili e laboriosi.",
+        ],
+        answer: 0,
+    },
+
+    {
+        question:"Dottore quando devo mettere la pomata?",
+        option: [
+            "La metti due volte al giorno, la mattina e la sera.",
+            "Mattala due volte al giorno, la mattina e la sera.",
+            "La metta due volte al giorno, la mattina e la sera.",
+        ],
+        answer: 2,
+    },
+
+    {
+        question:"Mi chiamo Gianni, ho 38 anni e ultimamente mi sento molto stanco e stressato. Purtroppo con i ritmi frenetici che ho non riesco a rilassarmi. Sono imprenditore e lavoro almeno dodici ore al giorno tutta la settimana, vado a letto molto tardi la sera e non ho mai tempo per qualche passatempo come fare sport, leggere o ascoltare musica. In media dormo solo 5 ore per notte. A colazione prendo solo un caffè e a pranzo e a cena mangio molta carne e molti dolci. Il fine settimana quando esco con gli amici bevo molti alcolici e fumo almeno dieci sigarette. Quando lavoravo come impiegato guadagnavo di meno ma ero meno stressato. Avevo il tempo di andare in palestra e facevo lunghe passeggiate nel parco. Inoltre non fumavo e bevevo qualche bicchiere di vino ogni tanto. Bevevo al massimo due caffè al giorno mentre adesso ne bevo almeno sei. La scorsa settimana sono andato dal medico, il quale mi ha consigliato di tornare allo stile di vita precedente e mi ha ordinato di smettere di bere e di fumare.",
+        option: [
+            "Com o trabalho do empresário Gianni, ele melhorou seu estilo de vida.",
+            "Com o trabalho precedente, Gianni teve um estilo de vida pejorativo.",
+            "Quando trabalhava como funcionário, o estilo de vida de Gianni era mais saudável.",
+        ],
+        answer:2,
+    },
+
+    {
+        question:"Sandra, andiamo a fare yoga insieme?",
+        option: [
+            "Mi sembra un'ottima idea.",
+            "Mi sembra una bene idea.",
+            "Mi sembra una meglio idea.",
+        ],
+        answer: 0,
+    },
+
+    {
+        question:"Dobbiamo portare il vino alla festa?",
+        option: [
+            "Certo, portate.",
+            "Certo, lo portate.",
+            "Certo, portatelo.",
+        ],
+        answer: 2,
+    },
+
+    {
+        question:"Vorrei visitare una bella città italiana. Dove mi consigli di andare?",
+        option: [
+            "Va' a Venezia e visita Piazza San Marco.",
+            "Anda a Venezia e visita Piazza San marco.",
+            "Va' a Venezia e visiti Piazza San marco.",
+        ],
+        answer: 0,
+    },
+
+    {
+        question:"Cosa pensi di fare dopo l'Università?",
+        option: [
+            "Penso che andare a fare un master in Inghilterra.",
+            "Penso che anderò a fare un master in Inghilterra.",
+            "Penso che andrò a fare un master in Inghilterra.",
+        ],
+        answer: 2,
+    },
+
+    {
+        question:"La mia giornata ieri è stata così:",
+        option: [
+            "Prima ho messo in ordine la casa, poi, mentre mio fratello dormiva, ho giocato con il computer e dalle 6 alle 8 ho fatto lezione di inglese.",
+            "Prima mettevo in ordine la casa, poi, mentre mio fratello ha dormito, giocavo con il computer e dalle 6 alle 8 facevo lezione di inglese.",
+            "Prima ho messo in ordine la casa, poi, mentre mio fratello ha dormito, ho giocato con il computer e dalle 6 alle 8 ho fatto lezione di inglese."
+        ],
+        answer: 0,
+    },
+
+]
+
+/*const teste4:typequestion[] = [
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+]*/
+
+/*const teste5:typequestion[] = [
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+]*/
+
+/*const teste6:typequestion[] = [
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+    {
+        question:"",
+        option: [
+
+        ],
+        answer:,
+    },
+
+]*/

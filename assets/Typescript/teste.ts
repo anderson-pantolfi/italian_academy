@@ -116,9 +116,17 @@ function finishTest(totalquestion:number){
 }
 
 function verificaTeste(){
-    if(document.title === "teste1"){
-        return teste1
-    }else if (document.title ==="teste2") {
-        return teste2
+    if(document.title === "teste 1"){
+        return teste1;
+    }else if (document.title ==="teste 2") {
+        return teste2;
+    }else if (document.title === "teste 3") {
+        return teste3;
+    }else if (document.title === "teste 4") {
+        "return teste4;"
+    }else if (document.title === "teste 5") {
+        "return teste5;"
+    }else{
+        "return teste6;"
     }
 }
