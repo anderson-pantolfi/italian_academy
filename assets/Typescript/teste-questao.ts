@@ -433,7 +433,7 @@ const teste2:typequestion[] = [
  },
 
  {
-    question:"Di solito Giovanni si sveglia alle sette di mattina ma rimane a letto almeno venti minuti prima di alzarsi. Poi si lava, si veste e fa colazione. Esce di casa verso le 8 per andare in ufficio. Lui fa l'avvocato e lavora dal lunedì al venerdì. Quando torna a casa dall'ufficio si riposa un po' e poi va a giocare a calcetto con gli amici oppure ascolta un po' di musica. Cena a casa alle otto e mezza. In genere va a letto a mezzanotte. Ieri, sabato, come al solito Giovanni non ha lavorato. Si è alzato più tardi, verso le 9, ha fatto la doccia e ha letto il giornale. Poi ha guardato la tv e ha pranzato con sua moglie e sua figlia. Il pomeriggio lui e la sua famiglia sono andati al cinema a vedere l'ultimo film di Paolo Virzì.",
+    question:"Leggi il seguente testo e scegli l'opzione corretta: Di solito Giovanni si sveglia alle sette di mattina ma rimane a letto almeno venti minuti prima di alzarsi. Poi si lava, si veste e fa colazione. Esce di casa verso le 8 per andare in ufficio. Lui fa l'avvocato e lavora dal lunedì al venerdì. Quando torna a casa dall'ufficio si riposa un po' e poi va a giocare a calcetto con gli amici oppure ascolta un po' di musica. Cena a casa alle otto e mezza. In genere va a letto a mezzanotte. Ieri, sabato, come al solito Giovanni non ha lavorato. Si è alzato più tardi, verso le 9, ha fatto la doccia e ha letto il giornale. Poi ha guardato la tv e ha pranzato con sua moglie e sua figlia. Il pomeriggio lui e la sua famiglia sono andati al cinema a vedere l'ultimo film di Paolo Virzì.",
     option: [
         "Giovanni acorda às sete e trabalha a semana toda, de segunda a sábado.",
         "Giovanni descansa depois do trabalho, assiste TV ou vai ao cinema.",
@@ -667,7 +667,7 @@ const teste3:typequestion[] = [
     },
 
     {
-        question:"Mi chiamo Gianni, ho 38 anni e ultimamente mi sento molto stanco e stressato. Purtroppo con i ritmi frenetici che ho non riesco a rilassarmi. Sono imprenditore e lavoro almeno dodici ore al giorno tutta la settimana, vado a letto molto tardi la sera e non ho mai tempo per qualche passatempo come fare sport, leggere o ascoltare musica. In media dormo solo 5 ore per notte. A colazione prendo solo un caffè e a pranzo e a cena mangio molta carne e molti dolci. Il fine settimana quando esco con gli amici bevo molti alcolici e fumo almeno dieci sigarette. Quando lavoravo come impiegato guadagnavo di meno ma ero meno stressato. Avevo il tempo di andare in palestra e facevo lunghe passeggiate nel parco. Inoltre non fumavo e bevevo qualche bicchiere di vino ogni tanto. Bevevo al massimo due caffè al giorno mentre adesso ne bevo almeno sei. La scorsa settimana sono andato dal medico, il quale mi ha consigliato di tornare allo stile di vita precedente e mi ha ordinato di smettere di bere e di fumare.",
+        question:"Leggi il seguente testo e scegli l'opzione corretta: Mi chiamo Gianni, ho 38 anni e ultimamente mi sento molto stanco e stressato. Purtroppo con i ritmi frenetici che ho non riesco a rilassarmi. Sono imprenditore e lavoro almeno dodici ore al giorno tutta la settimana, vado a letto molto tardi la sera e non ho mai tempo per qualche passatempo come fare sport, leggere o ascoltare musica. In media dormo solo 5 ore per notte. A colazione prendo solo un caffè e a pranzo e a cena mangio molta carne e molti dolci. Il fine settimana quando esco con gli amici bevo molti alcolici e fumo almeno dieci sigarette. Quando lavoravo come impiegato guadagnavo di meno ma ero meno stressato. Avevo il tempo di andare in palestra e facevo lunghe passeggiate nel parco. Inoltre non fumavo e bevevo qualche bicchiere di vino ogni tanto. Bevevo al massimo due caffè al giorno mentre adesso ne bevo almeno sei. La scorsa settimana sono andato dal medico, il quale mi ha consigliato di tornare allo stile di vita precedente e mi ha ordinato di smettere di bere e di fumare.",
         option: [
             "Com o trabalho do empresário Gianni, ele melhorou seu estilo de vida.",
             "Com o trabalho precedente, Gianni teve um estilo de vida pejorativo.",
@@ -728,617 +728,733 @@ const teste3:typequestion[] = [
 
 ]
 
-/*const teste4:typequestion[] = [
+const teste4:typequestion[] = [
     {
-        question:"",
+        question:"Fra quattro anni:",
         option: [
-
+            "sono andato in Italia.",
+            "andrò in Italia.",
+            "anderò in Italia.",
         ],
-        answer:,
+        answer: 1,
     },
 
     {
-        question:"",
+        question:"Scegli l'opzione corretta:",
         option: [
-
+            "Stavo per uscire ma poi ha cominciato a piovere e allora ho deciso di rimanere a casa.",
+            "Sto per uscire ma poi ha cominciato a piovere e allora ho deciso di rimanere a casa.",
+            "Sto uscendo ma poi ha cominciato a piovere e allora ho deciso di rimanere a casa.",
         ],
-        answer:,
+        answer: 0,
     },
 
 
     {
-        question:"",
+        question:"Ieri Marta stava male e dunque:",
         option: [
-
+            "non è potuta andare alla festa.",
+            "non è potuto andare alla festa.",
+            "non ha potuto andare alla festa",
         ],
-        answer:,
+        answer: 0,
     },
-
-
-    {
-        question:"",
-        option: [
 
-        ],
-        answer:,
-    },
 
     {
-        question:"",
+        question:"Ieri eravamo molto occupati e dunque:",
         option: [
-
+            "abbiamo dovuto lavorare molto.",
+            "siamo dovuti lavorare molto.",
+            "abbiamo dovuti lavorare molto.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Gregorio non aveva studiato:",
         option: [
-
+            "però non ha superato l'esame.",
+            "perché non ha superato l'esame.",
+            "quindi non ha superato l'esame.",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Dove abita Alessandro?",
         option: [
-
+            "Penso che abita in centro.",
+            "Penso che vive in centro.",
+            "Penso che abiti in centro.",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Se pioverà:",
         option: [
-
+            "prenederei l'ombrello.",
+            "prenderò l'ombrello.",
+            "prendevo l'ombrello."
         ],
-        answer:,
+        answer: 1,
     },
 
     {
-        question:"",
+        question:"Michele ha:",
         option: [
-
+            "un lavoro molto buono con uno stipendio alto, le ferie pagate e un contratto a tempo indeterminato.",
+            "un lavoro molto buono con uno stipendio basso, senza ferie pagate e un contratto a termine non rinnovabile.",
+            "un lavoro pessimo con uno stipendio alto, le ferie pagate e un contratto a tempo indeterminato.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Mi dà fastidio quando:",
         option: [
-
+            "la gente parli al cellulare al cinema.",
+            "la gente parlano con il cellulare al cinema.",
+            "la gente parla al cellulare al cinema.",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Leggi il seguente testo e scegli l'opzione corretta: Cara Francesca, ti scrivo per dirti che ho deciso di lasciare il mio lavoro. Lo so, forse è stata una decisione un po' affrettata in quanto non ho ancora finito di pagare la casa e ho due figli piccoli. Comunque mio marito Marco crede che abbia fatto bene non solo perché mi pagavano poco ma anche perché ultimamente secondo lui ero troppo stressata. Secondo lui I'unica cosa positiva era che potevo contare su un contratto a tempo determinato. Ora dobbiamo affrontare un periodo pieno di sacrifici e difficoltà però sono fiduciosa per il futuro. Ho già mandato la mia domanda di lavoro a varie aziende e attendo con speranza. E tu cosa mi racconti? Come va con Alfredo e la piccola Giada? Un abbraccio forte, Antonella",
         option: [
-
+            "Para o marido de Antonella, deixar o emprego foi uma decisão precipitada.",
+            "Para o marido de Antonella ela fez bem em deixar o emprego apesar do alto salário.",
+            "O marido de Antonella concorda com a decisão dela de deixar o emprego.",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Spero che domani:",
         option: [
-
+            "faccia caldo e ci sia il sole.",
+            "fa caldo e c'è il sole.",
+            "faccia caldo e c'è il sole.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Credo che Paolo sia uno studente molto preparato:",
         option: [
-
+            "perché sono convinto che passerà l'esame.",
+            "però sono convinto che passerà l'esame.",
+            "quindi sono convinto che passerà l'esame.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Il mio appartamento si trova al quinto:",
         option: [
-
+            "piano di un palazzo antico del centro di Roma.",
+            "scale di un palazzo antico del centro di Roma.",
+            "livello di un palazzo antico del centro di Roma.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Scegli l'opzione corretta:",
         option: [
-
+            "Samanta stava per telefonare a Silvia ma poi si è ricordata che l'aveva già avvisata della festa.",
+            "Samanta stava telefonando a Silvia ma poi si è ricordata che l'aveva già avvisata della festa.",
+            "Samanta sta telefonando a Silvia ma poi si è ricordata che l'aveva già avvisata della festa.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Scegli l'opzione corretta:",
         option: [
-
+            "Nella cucina di casa mia c'è il lavello, il frigorifero, un tavolo, la credenza e un forno.",
+            "Nel soggiorno di casa mia c'è l'armadio, il letto, la cassettiera e due comodini.",
+            "Nel bagno di casa mia c'è una scrivania, un computer, una stampante e una libreria.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Sono certo che Martina e Gabriella:",
         option: [
-
+            "arrivino fra poco.",
+            "sono arrivate fra poco.",
+            "arrivano fra poco.",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Io preferisco andare al cinema:",
         option: [
-
+            "del teatro.",
+            "al teatro.",
+            "che al teatro.",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Con l'autobus:",
         option: [
-
+            "ci metto almeno un'ora per arrivare all'Università.",
+            "metto almeno un'ora per arrivare all'Università.",
+            "mi metto almeno un'ora per arrivare all'Università.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Per essere un buon professore:",
         option: [
-
+            "bisogna conoscere bene la materia.",
+            "deve conoscere bene la materia.",
+            "si serve conoscere bene la materia.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Secondo te quanti anni ha Roberto?",
         option: [
-
+            "Mah, avrà più o meno quarant'anni.",
+            "Mah, averà più o meno quarant'anni.",
+            "Mah, sarà più o meno quarant'anni",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"È importante che il mio appartamento ideale:",
         option: [
-
+            "è ben illuminato.",
+            "sia ben illuminato.",
+            "siano ben illuminato.",
         ],
-        answer:,
+        answer: 1,
     },
 
     {
-        question:"",
+        question:"Ma perché non:",
         option: [
-
+            "siete voluti provare le melanzane?",
+            "avete volute provare le melanzane?",
+            "avete voluto provare le melanzane?",
         ],
-        answer:,
+        answer: 1,
     },
 
     {
-        question:"",
+        question:"Scegli l'opzione corretta:",
         option: [
-
+            "Secondo me Carlo e Franca lavorano insieme.",
+            "Credo che Carlo e Franca lavorano insieme.",
+            "Secondo me Carlo e Franca lavorino insieme.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Scegli l'opzione corretta:",
         option: [
-
+            "Caro Dottor Rossi, in riferimento a...",
+            "Eccellente Dottor Rossi, in riferimento a...",
+            "Egregio Dottor Rossi, in riferimento a...",
         ],
-        answer:,
-    },
-
-]*/
-
-/*const teste5:typequestion[] = [
-    {
-        question:"",
-        option: [
+        answer: 2,
+    }
 
-        ],
-        answer:,
-    },
+]
 
+const teste5:typequestion[] = [
     {
-        question:"",
+        question:"Prima di trasferirmi a Londra...",
         option: [
-
+            "Ho già fatto vari corsi di inglese.",
+            "Avevo già fatto vari corsi di inglese.",
+            "Avrei già fatto vari corsi di inglese.",
         ],
-        answer:,
+        answer: 1,
     },
-
 
     {
-        question:"",
+        question:"Sono del parere che le parole inglesi in italiano siano sempre più comuni.",
         option: [
-
+            "Hai ragione, sono d'accordo con te!",
+            "Concordo all'opinione.",
+            "Non mi sembra proprio di no.",
         ],
-        answer:,
+        answer: 0,
     },
 
-
     {
-        question:"",
+        question:"Chi ti ha dato quelle chiavi?",
         option: [
-
+            "Me l'ha data Giuseppe.",
+            "Me le hanno date Giuseppe.",
+            "Me le ha date Giuseppe",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Mi servirebbe il tuo dizionario...",
         option: [
-
+            "me li presti?",
+            "me la presti?",
+            "me lo presti?",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Anziché costruire un centro commerciale...",
         option: [
-
+            "io avrei costruito un parco giochi.",
+            "io avessi costruito un parco giochi.",
+            "io avrebbe costruito un parco giochi.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Marta, tu e Antonio avete deciso se vivrete in campagna o in città?",
         option: [
-
+            "Dopo tante discussioni, l'ho spuntato io e dunque andremo a vivere in campagna.",
+            "Dopo tante discussioni, l'ho spuntata io e dunque andremo a vivere in campagna.",
+            "Dopo tante discussioni, l'ha spuntata io e dunque andremo a vivere in campagna",
         ],
-        answer:,
+        answer: 1,
     },
 
     {
-        question:"",
+        question:"Senta, lascio la macchina in doppia fila solo 5 minuti per andare in farmacia e torno subito.",
         option: [
-
+            "Il vigile: 'Guarda che è vietato parcheggiare qui'.",
+            "Il vigile: 'Guardi che è vietato parcheggiare qui'.",
+            "Il vigile: 'Guardi che ha vietato parcheggiare qui'.",
         ],
-        answer:,
+        answer: 1,
     },
 
     {
-        question:"",
+        question:"Luca è stato assunto in quello studio medico?",
         option: [
-
+            "Credo che abbia fatto il colloquio, ma non so l'esito.",
+            "Credo che ha fatto il colloquio, ma non so l'esito.",
+            "Credo che avesse fatto il colloquio, ma non so l'esito.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Può darsi che...",
         option: [
-
+            "abbia successo qualcosa alla tua amica, è molto in ritardo.",
+            "sia successo qualcosa alla tua amica, è molto in ritardo.",
+            "è successo qualcosa alla tua amica, è molto in ritardo.",
         ],
-        answer:,
+        answer: 1,
     },
 
     {
-        question:"",
+        question:"Secondo l'impiegato del reparto spedizioni:",
         option: [
-
+            "il pacco non è arrivato al cliente perché lui era noioso.",
+            "il pacco non è arrivato al cliente perché l'indirizzo era sbagliato.",
+            "il pacco non è arrivato al cliente perché vive troppo vicino.",
         ],
-        answer:,
+        answer: 1,
     },
 
     {
-        question:"",
+        question:"Finalmente! Pensavo che tu...",
         option: [
-
+            "non sarai arrivato più.",
+            "non arriveresti più.",
+            "non arrivassi più.",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Non le ho dato la precedenza all'incrocio, e dunque lei...",
         option: [
-
+            "mi ha fatto un gestaccio.",
+            "mi ha fatto una parolaccia.",
+            "mi ha detto la linguaccia.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Leggi il seguente testo e scegli l'opzione corretta: La nuova iniziativa del comune di Avellino è lasciare dei libri disponibili su panchine della città, tavolini di bar e stazioni di treno e metropolitana affinché i passanti possano usufruirne in modo gratuito, leggerli e lasciarli in quello o in un altro posto per futuri lettori. I generi spaziano dai gialli ai romanzi rosa, ma i primi sono in netta prevalenza tra le preferenze dei lettori. Sulle copertine dei libri vi è una piccola scheda in modo tale che chi li legge può inserire il proprio nome e nazionalità, pur non essendo obbligatorio farlo.",
         option: [
-
+            "A prefeitura de Avellino deixa livros espalhados pela cidade para que os leitores deixem sua opinião em um cartão inserido dentro do livro.",
+            "O município de Avellino distribui livros policiais para quem os encontra na cidade.",
+            "O município de Avellino deixa tipos de livros espalhados pela cidade, para que os leitores possam lê-los sem ter que pagar nenhuma contribuição financeira.",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Gianluca ha scritto un messaggio a Fabiana per...",
         option: [
-
+            "dirgli che stasera lui andrà al cinema da solo.",
+            "dirle che stasera lui verrà al cinema da solo.",
+            "dirle che stasera lui andrà al cinema da solo.",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Il calo delle nascite in Italia è evidente...",
         option: [
-
+            "nonostante c1è un aumento dei matrimoni.",
+            "anche se c1è un aumento dei matrimoni.",
+            "sebbene c1è un aumento dei matrimoni",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Vieni a giocare con me...",
         option: [
-
+            "ti fai usare i miei giocattoli!",
+            "ti fanno usare i miei giocattoli!",
+            "ti faccio usare i miei giocattoli!",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Il libro narra di una persona anziana...",
         option: [
-
+            "che fu vittima di un incidente aereo.",
+            "che fui vittima di un incidente aereo.",
+            "che fummo vittima di un incidente aereo.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"In Italia, prima della mezzanotte del 31 dicembre...",
         option: [
-
+            "si mangia spesso il cotechino con le lenticchie.",
+            "ci mangia spesso il cotechino con le lenticchie.",
+            "si mangi spesso il cotechino con le lenticchie.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Un tuo amico arriva di nuovo in ritardo all'appuntamento. Tu gli dici:",
         option: [
-
+            "Mi avevi promesso che saresti arrivato in orario oggi!",
+            "Mi avevi promesso che arrivassi in orario oggi!",
+            "Mi avevi promesso che sarebbe arrivato in orario oggi!",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Se potessi trasformarmi in un uccello,...",
         option: [
-
+            "sarò volato libero per tutta la città osservando le persone dall'alto.",
+            "avessi volato libero per tutta la città osservando le persone dall'alto.",
+            "volerei libero per tutta la città osservando le persone dall'alto.",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Scegli l'opzione corretta (discorso diretto con il suo relativo discorso indiretto):",
         option: [
-
+            '"Mio padre le ha detto: sbrigati o farai tardi!" = Mio padre le ha detto che si sbriga o farà tardi.',
+            '"Mio padre le ha detto: sbrigati o farai tardi!" = Mio padre le ha detto che se si sbrigherà farà tardi.',
+            '"Mio padre le ha detto: sbrigati o farai tardi!" = Mio padre le ha detto di sbrigarsi o farà tardi.',
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Scegli l'opzione corretta:",
         option: [
-
+            "le regioni italiane sono ricche di monumenti storici, con numerose opzioni di piatti tipici, paesaggi mozzafiato e un mosaico di colori.",
+            "le regioni italiane sono ricche di monumenti storici, con dubbie opzioni di piatti tipici, paesaggi mozzafiato e un abisso di colori.",
+            "le regioni italiane sono ricche di monumenti storici, con esigue opzioni di piatti tipici, paesaggi strabilianti e un pollice di colori.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Giovanni ha fatto un incidente:",
         option: [
-
+            "guidando la macchina.",
+            "guidandola la macchina.",
+            "guidendo la macchina.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
-        option: [
-
+        question:"Dicono che l'imperatore Nerone:",
+        option: [            
+            "abbia incendiato Roma per tanti giorni, radendola al suolo.",
+            "abbia incendiato Roma per tanti giorni, radendo al suolo.",
+            "abbia incendiato Roma per tanti giorni, radendoli al suolo.",
         ],
-        answer:,
+        answer:0,
     },
+]
 
-]*/
-
-/*const teste6:typequestion[] = [
+const teste6:typequestion[] = [
     {
-        question:"",
+        question:"Scegli l'opzione corretta:",
         option: [
-
+            "Se avessi studiato di più, mi sarei laureato tre anni fa.",
+            "Se avessi studiato di più, mi avrei laureato tre anni fa.",
+            "Se avrei studiato di più, mi sarei laureato tre anni fa.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Scegli l'opzione corretta:",
         option: [
-
+            "I genitori devono sempre ascoltati.",
+            "I genitori vanno sempre ascoltati.",
+            "I genitori devono essere sempre ascoltati",
         ],
-        answer:,
+        answer: 2,
     },
 
 
     {
-        question:"",
+        question:"Sono andato al ristorante con mia moglie...",
         option: [
-
+            "dopo aver lasciato nostro figlio alla festa del suo amico Paolo.",
+            "dopo di lasciare nostro figlio alla festa del suo amico Paolo.",
+            "dopo lasciare nostro figlio alla festa del suo amico Paolo.",
         ],
-        answer:,
+        answer: 0,
     },
-
-
-    {
-        question:"",
-        option: [
 
-        ],
-        answer:,
-    },
 
     {
-        question:"",
+        question:"Luca:",
         option: [
-
+            "ce l'è messa tutta ma non ha passato l'esame.",
+            "ce l'ha messa tutta ma non ha passato l'esame.",
+            "ce la messa tutta ma non ha passato l'esame.",
         ],
-        answer:,
+        answer: 1,
     },
 
     {
-        question:"",
+        question:"Lo sapevi che Maria ha lasciato Luca dopo 3 giorni di matrimonio?",
         option: [
-
+            "Sarà pure vero?",
+            "Non ci posso immaginare!",
+            "Davvero? Non ci posso credere!",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Mi domando quante...",
         option: [
-
+            "...squadre di calcio esistano al mondo.",
+            "...squadre di calcio esistevano al mondo.",
+            "...squadre di calcio esistessero al mondo.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Qual è la tua opinione sull'incidente?",
         option: [
-
+            "Ciò che dovevo dire l'ho detto!",
+            "Coloro che dovevo dire l'ho detto!",
+            "Colui dovevo dire l'ho detto!",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Cosa ti piacerebbe mangiare?",
         option: [
-
+            "Vorrei qualche di dolce.",
+            "Vorrei qualsiasi di dolce.",
+            "Vorrei qualcosa di dolce.",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Nel 2015...",
         option: [
-
+            "si è letti pochi libri in Italia.",
+            "si sono letti pochi libri in Italia.",
+            "sono letti pochi libri in Italia.",
         ],
-        answer:,
+        answer: 1,
     },
 
     {
-        question:"",
+        question:"Come mai Gianluca non è andato a scuola?",
         option: [
-
+            "Non lo so, non si sarà sentito molto bene!",
+            "Non lo so, sarà sentito poco bene!",
+            "Non lo so, è sentito poco bene!",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Scegli l'opzione corretta (discorso diretto con il suo relativo discorso indiretto):",
         option: [
-
+            "Il Professore disse: 'Domani ci sarà l'esame scritto.' = Il professore disse che il giorno successivo ci sarebbe stato l'esame scritto.",
+            "Il Professore disse: 'Domani ci sarà l'esame scritto.' = Il professore disse che il giorno successivo ci sarà l'esame scritto.",
+            "Il Professore disse: 'Domani ci sarà l'esame scritto.' = Il professore disse che il giorno successivo ci sarà stato l'esame scritto.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Leggi il seguente testo e scegli l'opzione corretta: La stampa internazionale può rivestire un ruolo essenziale nell'incentivare il turismo in Italia, soprattutto di quei luoghi meno noti al grande pubblico. Ogni anno, giornali esteri di rinomata fama stilano una specie di classifica di mete turistiche imperdibili, e tra di esse vi sono sempre alcune italiane, il che funge da spinta alla visita di questi luoghi da parte di turisti provenienti da tutto il mondo. Giacché alcuni blog, siti e giornali esteri godono della fiducia di migliaia di lettori, le destinazioni da loro indicate possono divenire facilmente bersagli di un boom di visitatori. Tutto ciò non fa che fornire un grande slancio al turismo italiano.",
         option: [
-
+            "Alguns destinos turísticos na Itália são recomendados pela imprensa estrangeira porque há um grande boom de visitantes todos os anos.",
+            "Alguns destinos turísticos da Itália recebem um boom de visitantes graças à sua popularização pela imprensa internacional.",
+            "A imprensa internacional contribui para o aumento do turismo na Itália, tanto em locais menos conhecidos como em locais já famosos.",
         ],
-        answer:,
+        answer: 1,
     },
 
     {
-        question:"",
+        question:"Mi piacerebbe che:",
         option: [
-
+            "la mia opinione sarebbe presa in considerazione.",
+            "la mia opinione sia stata presa in considerazione.",
+            "la mia opinione fosse presa in considerazione.",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Cosa ti sembra di quel romanzo?",
         option: [
-
+            "È il libro più noioso che avessi mai letto.",
+            "È il libro più noioso che abbia mai letto.",
+            "È il libro più noioso che avrei mai letto.",
         ],
-        answer:,
+        answer: 1,
     },
 
     {
-        question:"",
+        question:"Mauro e Marta hanno avuto una brutta discussione. Lei gli dice:",
         option: [
-
+            "Quando trovi queste scuse mi fai davvero imbestialire!",
+            "Ho un debole per le tue scuse!",
+            "Quando trovi queste scuse mi faccio davvero incavolare!",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Se una persona è presuntuosa, allora:",
         option: [
-
+            "se la tira.",
+            "va su di giri.",
+            "è al settimo cielo.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Andrai al mare quest'anno?",
         option: [
-
+            "Benché mi diano le ferie, sì!",
+            "Qualora mi dessero le ferie, sì!",
+            "Purché non mi diano le ferie, sì!",
         ],
-        answer:,
+        answer: 1,
     },
 
     {
-        question:"",
+        question:"Questo è il film...",
         option: [
-
+            "di che ti avevo parlato.",
+            "che ti avevo parlato.",
+            "di cui ti avevo parlato.",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Se vedi Chiara...",
         option: [
-
+            "dille che dopo aver usato la bici può lasciarla a casa.",
+            "dille che dopo usare la bici può lasciarla a casa.",
+            "digli che dopo aver usato la bici può lasciare a casa",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Non posso dire se le rane fritte mi piacciano o no...",
         option: [
-
+            "non avendo mai assaggiato.",
+            "non avendole mai assaggiato.",
+            "non avendole mai assaggiate.",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Antonio è più intelligente...",
         option: [
-
+            "di quanto pensassi.",
+            "che quanto pensassi.",
+            "che quello che pensassi.",
         ],
-        answer:,
+        answer: 0,
     },
 
     {
-        question:"",
+        question:"Ho cambiato la data della festa...",
         option: [
-
+            "per far sì che lui può venire.",
+            "per far sì che lui potesse venire.",
+            "per far sì che lui potrà venire.",
         ],
-        answer:,
+        answer: 1,
     },
 
     {
-        question:"",
+        question:"Scegli l'opzione corretta:",
         option: [
-
+            "due lavastoviglie, tre cavitappi e quattro cavolfiori",
+            "due lavastoviglia, tre cavitappi e quattro cavolfiore",
+            "due lavastoviglie, tre cavatappi e quattro cavolfiori",
         ],
-        answer:,
+        answer: 2,
     },
 
     {
-        question:"",
+        question:"Com'è andato l'esame di geografia politica?",
         option: [
-
+            "Il prof. mi ha fatto domande troppo difficili e io mi sono un po' arrampicata sugli specchi.",
+            "Il prof. mi ha fatto domande troppo difficili e io non me la sono sbrigata da sola.",
+            "Il prof. mi ha fatto domande troppo difficili e io non me la sono presa.",
         ],
-        answer:,
+        answer: 0,
     },
-
-]*/
+]

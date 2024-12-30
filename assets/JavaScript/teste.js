@@ -101,12 +101,12 @@ function verificaTeste() {
         return teste3;
     }
     else if (document.title === "teste 4") {
-        "return teste4;";
+        return teste4;
     }
     else if (document.title === "teste 5") {
-        "return teste5;";
+        return teste5;
     }
     else {
-        "return teste6;";
+        return teste6;
     }
 }
