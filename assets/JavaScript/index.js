@@ -19,15 +19,15 @@ const textbanner = document.getElementById("textbanner");
 if (textbanner) {
     effectTyperWriter(textbanner);
 }
-let validarformulario = {
+const validarformulario = {
     handleSubmit: (event) => {
         event.preventDefault();
         let enviar = true;
-        let inputs = form.querySelectorAll('input');
+        const inputs = form.querySelectorAll("input");
         validarformulario.limparerro();
         for (let itens = 0; itens < inputs.length; itens++) {
-            let input = inputs[itens];
-            let check = validarformulario.checkInput(input);
+            const input = inputs[itens];
+            const check = validarformulario.checkInput(input);
             if (check !== true) {
                 enviar = false;
                 if (typeof check === "string") {
@@ -44,11 +44,11 @@ let validarformulario = {
         if (jasonRegras !== null) {
             const objetoregras = JSON.parse(jasonRegras);
             if (objetoregras !== null) {
-                if (objetoregras.requered === 'yes' && input.value == "") {
-                    return 'erro campo não pode estar vazio, item obrigatorio';
+                if (objetoregras.requered === "yes" && input.value == "") {
+                    return "erro campo não pode estar vazio, item obrigatorio";
                 }
                 if (email.value !== "" && input === email) {
-                    let padraoemail = /[a-zA-Z0-9]+([._%+-]+[a-zA-Z0-9]+)*@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
+                    const padraoemail = /[a-zA-Z0-9]+([._%+-]+[a-zA-Z0-9]+)*@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
                     if (!padraoemail.test(input.value)) {
                         return "email invalido";
                     }
@@ -60,15 +60,15 @@ let validarformulario = {
     exibirerro: (input, erro) => {
         input.style.borderColor = "red";
         input.style.borderWidth = "3px";
-        let erroElemento = document.createElement('p');
-        erroElemento.classList.add('erro');
+        const erroElemento = document.createElement("p");
+        erroElemento.classList.add("erro");
         erroElemento.innerHTML = erro;
         if (input.parentElement) {
             input.parentElement.insertBefore(erroElemento, input.nextElementSibling);
         }
     },
     limparerro: () => {
-        let erroElementos = document.querySelectorAll(".erro");
+        const erroElementos = document.querySelectorAll(".erro");
         for (let erro = 0; erro < erroElementos.length; erro++) {
             erroElementos[erro].remove();
         }
@@ -78,7 +78,7 @@ function validarinputnome(input) {
     const jasonRegras = input.getAttribute("data-regras");
     if (jasonRegras !== null) {
         const objetoregras = JSON.parse(jasonRegras);
-        let erroElementos = document.querySelectorAll(".erronome");
+        const erroElementos = document.querySelectorAll(".erronome");
         for (let erro = 0; erro < erroElementos.length; erro++) {
             erroElementos[erro].remove();
         }
@@ -97,8 +97,8 @@ function validarinputnome(input) {
             input.style.borderColor = "#969494";
             input.style.borderWidth = "1px";
         }
-        let erroElemento = document.createElement('p');
-        erroElemento.classList.add('erronome');
+        const erroElemento = document.createElement("p");
+        erroElemento.classList.add("erronome");
         erroElemento.innerHTML = erro;
         if (input.parentElement) {
             input.parentElement.insertBefore(erroElemento, nome.nextElementSibling);
@@ -109,14 +109,14 @@ function validarinputtelefone(input) {
     const jasonRegras = input.getAttribute("data-regras");
     if (jasonRegras !== null) {
         const objetoregras = JSON.parse(jasonRegras);
-        let erroElementos = document.querySelectorAll(".errotel");
+        const erroElementos = document.querySelectorAll(".errotel");
         for (let erro = 0; erro < erroElementos.length; erro++) {
             erroElementos[erro].remove();
         }
         let erro = "";
-        let numero = parseInt(input.value);
+        const numero = parseInt(input.value);
         if (isNaN(numero) && input.value !== "") {
-            erro = 'só é permitido numero de 0 a 9, isso não é um numero';
+            erro = "só é permitido numero de 0 a 9, isso não é um numero";
             input.style.borderColor = "red";
             input.style.borderWidth = "3px";
         }
@@ -134,8 +134,8 @@ function validarinputtelefone(input) {
             input.style.borderColor = "#969494";
             input.style.borderWidth = "1px";
         }
-        let erroElemento = document.createElement('p');
-        erroElemento.classList.add('errotel');
+        const erroElemento = document.createElement("p");
+        erroElemento.classList.add("errotel");
         erroElemento.innerHTML = erro;
         if (input.parentElement) {
             input.parentElement.insertBefore(erroElemento, nome.nextElementSibling);
@@ -147,14 +147,14 @@ function validarinputcelular(input) {
     const jasonRegras = input.getAttribute("data-regras");
     if (jasonRegras !== null) {
         const objetoregras = JSON.parse(jasonRegras);
-        let erroElementos = document.querySelectorAll(".errocel");
+        const erroElementos = document.querySelectorAll(".errocel");
         for (let erro = 0; erro < erroElementos.length; erro++) {
             erroElementos[erro].remove();
         }
         let erro = "";
-        let numero = parseInt(input.value);
+        const numero = parseInt(input.value);
         if (isNaN(numero) && input.value !== "") {
-            erro = 'só é permitido numero de 0 a 9, isso não é um numero';
+            erro = "só é permitido numero de 0 a 9, isso não é um numero";
             input.style.borderColor = "red";
             input.style.borderWidth = "3px";
         }
@@ -172,8 +172,8 @@ function validarinputcelular(input) {
             input.style.borderColor = "#969494";
             input.style.borderWidth = "1px";
         }
-        let erroElemento = document.createElement('p');
-        erroElemento.classList.add('errocel');
+        const erroElemento = document.createElement("p");
+        erroElemento.classList.add("errocel");
         erroElemento.innerHTML = erro;
         if (input.parentElement) {
             input.parentElement.insertBefore(erroElemento, nome.nextElementSibling);
@@ -181,13 +181,13 @@ function validarinputcelular(input) {
     }
 }
 function validarinputemail(input) {
-    let erroElementos = document.querySelectorAll(".erroemail");
+    const erroElementos = document.querySelectorAll(".erroemail");
     for (let erro = 0; erro < erroElementos.length; erro++) {
         erroElementos[erro].remove();
     }
     let erro = "";
     if (email.value !== "" && input === email) {
-        let padraoemail = /[a-zA-Z0-9]+([._%+-]+[a-zA-Z0-9]+)*@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
+        const padraoemail = /[a-zA-Z0-9]+([._%+-]+[a-zA-Z0-9]+)*@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/;
         if (!padraoemail.test(input.value)) {
             erro = "email invalido";
             input.style.borderColor = "red";
@@ -198,34 +198,34 @@ function validarinputemail(input) {
         input.style.borderColor = "#969494";
         input.style.borderWidth = "1px";
     }
-    let erroElemento = document.createElement('p');
-    erroElemento.classList.add('erroemail');
+    const erroElemento = document.createElement("p");
+    erroElemento.classList.add("erroemail");
     erroElemento.innerHTML = erro;
     if (input.parentElement) {
         input.parentElement.insertBefore(erroElemento, nome.nextElementSibling);
     }
 }
 ;
-form.addEventListener('submit', validarformulario.handleSubmit);
-nome.addEventListener('input', () => {
+form.addEventListener("submit", validarformulario.handleSubmit);
+nome.addEventListener("input", () => {
     validarinputnome(nome);
 });
-telefone.addEventListener('input', () => {
+telefone.addEventListener("input", () => {
     validarinputtelefone(telefone);
 });
-celular.addEventListener('input', () => {
+celular.addEventListener("input", () => {
     validarinputcelular(celular);
 });
-email.addEventListener('input', () => {
+email.addEventListener("input", () => {
     validarinputemail(email);
 });
-botao.addEventListener('mouseover', () => {
+botao.addEventListener("mouseover", () => {
     botao.style.backgroundColor = "#e00c0c";
-    botao.style.color = 'white';
+    botao.style.color = "white";
 });
-botao.addEventListener('mouseout', () => {
+botao.addEventListener("mouseout", () => {
     {
         botao.style.backgroundColor = "#e9e6e6";
-        botao.style.color = 'black';
+        botao.style.color = "black";
     }
 });

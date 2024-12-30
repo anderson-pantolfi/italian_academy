@@ -334,7 +334,7 @@ const teste2 = [
         question: "Dov'è il Duomo?",
         option: [
             "Accanto alla Galleria Vittorio Emanuele.",
-            'Vicino della Galleria Vittorio Emanuele.',
+            "Vicino della Galleria Vittorio Emanuele.",
             "Dietro della Galleria Vittorio Emanuele",
         ],
         answer: 0,
@@ -432,9 +432,9 @@ const teste2 = [
     {
         question: "Scegli l'opzione corretta:",
         option: [
-            '"Cosa fai a Ferragosto?" "Sto a casa con la mia famiglia, mangiamo il panettone, apriamo i regali e beviamo lo spumante.!"',
-            '"Cosa fai a Natale?" "Sto a casa con la mia famiglia, mangiamo il panettone, apriamo i regali e beviamo lo spumante.!"',
-            '"Cosa fai a Carnevale?" "Sto a casa con la mia famiglia, mangiamo il panettone, apriamo i regali e beviamo lo spumante.!"',
+            "\"Cosa fai a Ferragosto?\" \"Sto a casa con la mia famiglia, mangiamo il panettone, apriamo i regali e beviamo lo spumante.!\"",
+            "\"Cosa fai a Natale?\" \"Sto a casa con la mia famiglia, mangiamo il panettone, apriamo i regali e beviamo lo spumante.!\"",
+            "\"Cosa fai a Carnevale?\" \"Sto a casa con la mia famiglia, mangiamo il panettone, apriamo i regali e beviamo lo spumante.!\"",
         ],
         answer: 1,
     },
@@ -497,9 +497,9 @@ const teste3 = [
     {
         question: "Scegli l'opzione corretta:",
         option: [
-            '"Quante ore dura il volo Roma-Londra?" "Circa due".',
-            '"Quanto viene il biglietto scontato del volo Roma-Londra?" "Circa due".',
-            '"Vorrei delle informazioni sulla durata del volo Roma-Londra." "Circa due".',
+            "\"Quante ore dura il volo Roma-Londra?\" \"Circa due\".",
+            "\"Quanto viene il biglietto scontato del volo Roma-Londra?\" \"Circa due\".",
+            "\"Vorrei delle informazioni sulla durata del volo Roma-Londra.\" \"Circa due\".",
         ],
         answer: 2,
     },
@@ -1059,9 +1059,9 @@ const teste5 = [
     {
         question: "Scegli l'opzione corretta (discorso diretto con il suo relativo discorso indiretto):",
         option: [
-            '"Mio padre le ha detto: sbrigati o farai tardi!" = Mio padre le ha detto che si sbriga o farà tardi.',
-            '"Mio padre le ha detto: sbrigati o farai tardi!" = Mio padre le ha detto che se si sbrigherà farà tardi.',
-            '"Mio padre le ha detto: sbrigati o farai tardi!" = Mio padre le ha detto di sbrigarsi o farà tardi.',
+            "'Mio padre le ha detto: sbrigati o farai tardi!' = Mio padre le ha detto che si sbriga o farà tardi.",
+            "'Mio padre le ha detto: sbrigati o farai tardi!' = Mio padre le ha detto che se si sbrigherà farà tardi.",
+            "'Mio padre le ha detto: sbrigati o farai tardi!' = Mio padre le ha detto di sbrigarsi o farà tardi.'",
         ],
         answer: 2,
     },

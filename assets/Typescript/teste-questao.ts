@@ -4,6 +4,7 @@ interface typequestion {
     answer: number,
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const teste1: typequestion[] = [
     {
         question:"Di dove sei?",
@@ -241,6 +242,8 @@ const teste1: typequestion[] = [
     }
 ]
 
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const teste2:typequestion[] = [
  {
     question: "Quanti libri leggi al mese?",
@@ -366,7 +369,7 @@ const teste2:typequestion[] = [
     question: "Dov'è il Duomo?",
     option: [
         "Accanto alla Galleria Vittorio Emanuele.",
-        'Vicino della Galleria Vittorio Emanuele.',
+        "Vicino della Galleria Vittorio Emanuele.",
         "Dietro della Galleria Vittorio Emanuele",
     ],
     answer: 0,
@@ -475,14 +478,15 @@ const teste2:typequestion[] = [
  {
     question:"Scegli l'opzione corretta:",
     option: [
-        '"Cosa fai a Ferragosto?" "Sto a casa con la mia famiglia, mangiamo il panettone, apriamo i regali e beviamo lo spumante.!"',
-        '"Cosa fai a Natale?" "Sto a casa con la mia famiglia, mangiamo il panettone, apriamo i regali e beviamo lo spumante.!"',
-        '"Cosa fai a Carnevale?" "Sto a casa con la mia famiglia, mangiamo il panettone, apriamo i regali e beviamo lo spumante.!"',
+        "\"Cosa fai a Ferragosto?\" \"Sto a casa con la mia famiglia, mangiamo il panettone, apriamo i regali e beviamo lo spumante.!\"",
+        "\"Cosa fai a Natale?\" \"Sto a casa con la mia famiglia, mangiamo il panettone, apriamo i regali e beviamo lo spumante.!\"",
+        "\"Cosa fai a Carnevale?\" \"Sto a casa con la mia famiglia, mangiamo il panettone, apriamo i regali e beviamo lo spumante.!\"",
     ],
     answer: 1,
  },
 ]
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const teste3:typequestion[] = [
     {
         question:"Da piccolo:",
@@ -549,9 +553,9 @@ const teste3:typequestion[] = [
     {
         question:"Scegli l'opzione corretta:",
         option: [
-            '"Quante ore dura il volo Roma-Londra?" "Circa due".',
-            '"Quanto viene il biglietto scontato del volo Roma-Londra?" "Circa due".',
-            '"Vorrei delle informazioni sulla durata del volo Roma-Londra." "Circa due".',
+            "\"Quante ore dura il volo Roma-Londra?\" \"Circa due\".",
+            "\"Quanto viene il biglietto scontato del volo Roma-Londra?\" \"Circa due\".",
+            "\"Vorrei delle informazioni sulla durata del volo Roma-Londra.\" \"Circa due\".",
         ],
         answer: 2,
     },
@@ -728,6 +732,7 @@ const teste3:typequestion[] = [
 
 ]
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const teste4:typequestion[] = [
     {
         question:"Fra quattro anni:",
@@ -973,6 +978,7 @@ const teste4:typequestion[] = [
 
 ]
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const teste5:typequestion[] = [
     {
         question:"Prima di trasferirmi a Londra...",
@@ -1177,9 +1183,9 @@ const teste5:typequestion[] = [
     {
         question:"Scegli l'opzione corretta (discorso diretto con il suo relativo discorso indiretto):",
         option: [
-            '"Mio padre le ha detto: sbrigati o farai tardi!" = Mio padre le ha detto che si sbriga o farà tardi.',
-            '"Mio padre le ha detto: sbrigati o farai tardi!" = Mio padre le ha detto che se si sbrigherà farà tardi.',
-            '"Mio padre le ha detto: sbrigati o farai tardi!" = Mio padre le ha detto di sbrigarsi o farà tardi.',
+            "'Mio padre le ha detto: sbrigati o farai tardi!' = Mio padre le ha detto che si sbriga o farà tardi.",
+            "'Mio padre le ha detto: sbrigati o farai tardi!' = Mio padre le ha detto che se si sbrigherà farà tardi.",
+            "'Mio padre le ha detto: sbrigati o farai tardi!' = Mio padre le ha detto di sbrigarsi o farà tardi.'",
         ],
         answer: 2,
     },
@@ -1215,6 +1221,7 @@ const teste5:typequestion[] = [
     },
 ]
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const teste6:typequestion[] = [
     {
         question:"Scegli l'opzione corretta:",

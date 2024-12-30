@@ -1,6 +1,7 @@
-const swiper = new Swiper('.swiper', {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars, no-undef
+const swiper = new Swiper(".swiper", {
 
-    direction: 'horizontal',
+    direction: "horizontal",
     loop: true,
     grabCursor: true,
   
@@ -19,16 +20,16 @@ const swiper = new Swiper('.swiper', {
       },
 
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
     },
   
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
 
     scrollbar: {
-      el: '.swiper-scrollbar',
+      el: ".swiper-scrollbar",
     },
   });

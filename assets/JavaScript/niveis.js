@@ -11,7 +11,7 @@ const link = [
     "testefive.html",
     "testesix.html",
 ];
-let listbutton = document.querySelectorAll(".buttonteste");
+const listbutton = document.querySelectorAll(".buttonteste");
 listbutton.forEach((button, index) => {
     button.addEventListener("click", () => {
         startTest(index);

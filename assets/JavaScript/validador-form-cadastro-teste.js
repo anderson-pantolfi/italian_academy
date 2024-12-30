@@ -3,11 +3,11 @@ const validarformularioteste = {
     validarsubmit: (event) => {
         event.preventDefault();
         let enviar = true;
-        let Inputs = document.querySelectorAll("input");
+        const Inputs = document.querySelectorAll("input");
         validarformularioteste.limparerros();
         for (let elemento = 0; elemento < Inputs.length; elemento++) {
-            let input = Inputs[elemento];
-            let erro = validarformularioteste.verificarerro(input);
+            const input = Inputs[elemento];
+            const erro = validarformularioteste.verificarerro(input);
             if (erro !== true) {
                 enviar = false;
                 if (typeof erro === "string") {
@@ -24,12 +24,12 @@ const validarformularioteste = {
         ;
     },
     verificarerro: (input) => {
-        const requistos = input.getAttribute('date-regras');
+        const requistos = input.getAttribute("date-regras");
         if (requistos) {
             const regras = JSON.parse(requistos);
             if (regras !== null) {
                 if (regras.requered === "yes" && input.value === "") {
-                    return 'obs. voce não prencheu este campo, campo obrigatorio';
+                    return "obs. voce não prencheu este campo, campo obrigatorio";
                 }
             }
         }
@@ -38,7 +38,7 @@ const validarformularioteste = {
     exibirerro: (input, erro) => {
         input.style.borderColor = "red";
         input.style.borderWidth = "3px";
-        let diverro = document.createElement("p");
+        const diverro = document.createElement("p");
         diverro.classList.add("stylediverros");
         diverro.innerHTML = erro;
         if (input.parentElement) {
@@ -52,5 +52,5 @@ const validarformularioteste = {
         }
     }
 };
-const formulario = document.getElementById('form_cadastro_teste');
+const formulario = document.getElementById("form_cadastro_teste");
 formulario.addEventListener("submit", validarformularioteste.validarsubmit);

@@ -6,7 +6,7 @@ const divResult = document.getElementById("result") as HTMLDivElement;
 const divprogress = document.getElementById("progress") as HTMLDivElement;
 const buttonPaginaNiveisteste = document.getElementById("voltar") as HTMLButtonElement;
 
-let listObjectquestion = verificaTeste()
+const listObjectquestion = verificaTeste()
 
 buttonPaginaNiveisteste.addEventListener("click", ()=>{
     window.location.href = "selected-nivel.html"
@@ -17,7 +17,7 @@ showQuestion()
 function showQuestion(){
     const ProgressBar = document.getElementById("progress-bar") as HTMLDivElement;
     if(listObjectquestion){
-        let totalnumberquestion:number = listObjectquestion.length;
+        const totalnumberquestion:number = listObjectquestion.length;
 
         if(listObjectquestion[currentQuestion]){
             const divquestion = document.getElementById("question") as HTMLDivElement;
@@ -25,10 +25,10 @@ function showQuestion(){
             const divquantidadeQuestion = document.getElementById("quantidade-question") as HTMLDivElement;
 
 
-            let questions = listObjectquestion[currentQuestion];
+            const questions = listObjectquestion[currentQuestion];
 
 
-            let porcentagemProgressBar = Math.floor((currentQuestion / totalnumberquestion) * 100)
+            const porcentagemProgressBar = Math.floor((currentQuestion / totalnumberquestion) * 100)
             ProgressBar.style.width = `${porcentagemProgressBar}%`;
 
             divResult.style.display = "none";
@@ -41,8 +41,8 @@ function showQuestion(){
             divquestion.textContent = questions.question;
             divoptions.textContent = "";
             
-            for(let question in questions.option){
-                let div = createElement("div") as HTMLDivElement;
+            for(const question in questions.option){
+                const div = createElement("div") as HTMLDivElement;
                 div.setAttribute("data-opt", question )
                 div.id = question;
                 div.textContent = questions.option[question];
@@ -67,9 +67,9 @@ function addElement(parent:HTMLElement, element:HTMLElement){
 
 function selectedoption(event:Event){
     if(event.target){
-        let clikedOption = parseInt((event.target as HTMLElement).getAttribute("data-opt")!);
+        const clikedOption = parseInt((event.target as HTMLElement).getAttribute("data-opt")!);
         if(listObjectquestion){
-            let resposta = listObjectquestion[currentQuestion].answer
+            const resposta = listObjectquestion[currentQuestion].answer
 
             if(resposta === clikedOption){
                 (event.target as HTMLElement).style.backgroundColor = "green";
@@ -78,8 +78,8 @@ function selectedoption(event:Event){
             }else{
                 (event.target as HTMLElement).style.backgroundColor = "red";
                 (event.target as HTMLElement).style.color = "white";
-                let indiceResposta = resposta.toString()
-                let divResposta = document.getElementById(indiceResposta) as HTMLDivElement;
+                const indiceResposta = resposta.toString()
+                const divResposta = document.getElementById(indiceResposta) as HTMLDivElement;
                 if(divResposta){
                     divResposta.style.backgroundColor = "green";
                     divResposta.style.color = "white";
@@ -94,7 +94,7 @@ function selectedoption(event:Event){
 }
 
 function finishTest(totalquestion:number){
-    let procentagemAcertos = Math.floor((correctAnswers / totalquestion) * 100)
+    const procentagemAcertos = Math.floor((correctAnswers / totalquestion) * 100)
 
 
     divAreaQuestions.style.display = "none";

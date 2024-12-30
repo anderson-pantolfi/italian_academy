@@ -2,13 +2,13 @@ const validarformularioteste = {
     validarsubmit:(event: Event) => {
         event.preventDefault();
         let enviar:boolean = true;
-        let Inputs: NodeListOf<HTMLInputElement> = document.querySelectorAll("input");
+        const Inputs: NodeListOf<HTMLInputElement> = document.querySelectorAll("input");
 
         validarformularioteste.limparerros();
         
         for(let elemento:number = 0; elemento < Inputs.length; elemento++){
-            let input:HTMLInputElement = Inputs[elemento];
-            let erro:boolean | string = validarformularioteste.verificarerro(input);
+            const input:HTMLInputElement = Inputs[elemento];
+            const erro:boolean | string = validarformularioteste.verificarerro(input);
             if(erro !== true) {
                 enviar = false;
                 if(typeof erro === "string"){
@@ -25,12 +25,12 @@ const validarformularioteste = {
 
 
     verificarerro: (input:HTMLInputElement): boolean | string =>  {
-        const requistos = input.getAttribute('date-regras');
+        const requistos = input.getAttribute("date-regras");
         if (requistos){
             const regras = JSON.parse(requistos);
              if(regras !==null){
                 if(regras.requered === "yes" && input.value === "") {
-                    return 'obs. voce não prencheu este campo, campo obrigatorio'
+                    return "obs. voce não prencheu este campo, campo obrigatorio"
                 }
             }     
         }
@@ -42,7 +42,7 @@ const validarformularioteste = {
         input.style.borderColor = "red";
         input.style.borderWidth = "3px";
 
-        let diverro:HTMLDivElement = document.createElement("p");
+        const diverro:HTMLDivElement = document.createElement("p");
         diverro.classList.add("stylediverros");
         diverro.innerHTML = erro
 
@@ -59,5 +59,5 @@ const validarformularioteste = {
     }
 };
 
-const formulario = document.getElementById('form_cadastro_teste') as HTMLFormElement;
+const formulario = document.getElementById("form_cadastro_teste") as HTMLFormElement;
 formulario.addEventListener("submit", validarformularioteste.validarsubmit);
